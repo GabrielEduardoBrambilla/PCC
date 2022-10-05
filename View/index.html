@@ -4,18 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/login.css" />
-    <title>Login DevGate</title>
+    <link rel="stylesheet" href="./Css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login - DevGate</title>
   </head>
   <body>
-    <div class="left">
-      <!-- Texto "motivacional" -->
-    </div>
-    <div class="right">
-      <form action="post" class="log-form">
-        <label for=""> <input type="text" placeholder="Login" /> </label>
-        <label for=""> <input type="text" placeholder="Senha" /> </label>
-      </form>
-    </div>
+    <main>
+      <section class="text">
+        <h1>DevGate</h1>
+        <p>
+          Entre nesse portal <br />
+          e aprenda a <br />
+          programar
+        </p>
+      </section>
+      <div class="login-form">
+        <form action="post">
+          <input type="text" /> <br />
+          <input type="text" /> <br />
+          <small><a href="#">recuperar senha</a></small>
+
+          <br />
+          <br />
+
+          <input class="input-btn" type="submit" value="ENTRAR" />
+          <br />
+          <small><a href="#">Novo? Registre-se aqui</a></small>
+        </form>
+      </div>
+    </main>
   </body>
 </html>

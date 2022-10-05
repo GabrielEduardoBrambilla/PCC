@@ -1,24 +1,41 @@
-*{
-  margin: 0;
-  padding: 0;
+html{
+  font-size: 10px;
+}
 
-}
-.left{
-  min-width: 50vw;
-  min-height: 100vh;
-  background-color: red;
-}
-.log-form{
-  text-align: center;
-  align-items: center;
+body{
+  font-family: 'Inter', sans-serif;
+  background-image: url(/img/CTA\ Background.png);
   
 }
-.right{
-  background-color: aqua;
-  min-height: 100vh;
-  min-width: 50vw;
 
-}
-body{
+main{
+  margin: 10vw;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main section{
+  color: #FFFFFF;
+  font-size: 4rem;
+}
+
+main section h1{
+  font-style: bold;
+  font-size: 6rem;
+}
+
+.login-form{
+  display: block;
+  padding: 4.5rem 3.3rem;
+  border-style: solid;
+  border-radius: 0.9rem;
+  border-width: 0.3rem;
+  border-color: #FFFFFF;
+}
+.login-form a {
+  text-decoration: none;
+
+  font-style: normal;
+  font-size: 2.1rem;
 }
