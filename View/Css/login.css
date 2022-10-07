@@ -1,5 +1,5 @@
 html{
-  font-size: 10px;
+  font-size: min(10px, 1vw);
 }
 
 body{
@@ -9,7 +9,7 @@ body{
 }
 
 main{
-  margin: 10vw;
+  margin: min(10vw, 70%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,8 +26,7 @@ main section h1{
 }
 
 .login-form{
-  display: block;
-  padding: 4.5rem 3.3rem;
+  padding: min(4.5rem, 3vw) min(3.3rem, 2rem);
   border-style: solid;
   border-radius: 0.9rem;
   border-width: 0.3rem;
