@@ -1,0 +1,174 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", "sans-serif";
+  background-color: #1F1D1D;
+  color: #EAF5FF;
+}
+
+header {
+  background-color: #011936;
+  border-bottom: rgb(255, 0, 0) solid 15px;
+}
+header nav {
+  margin: 0 6rem;
+  display: flex;
+}
+header nav a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.6rem;
+}
+
+.cta {
+  background-image: url(../img/CTA\ Background.png);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+.cta div {
+  max-width: 65.6rem;
+}
+.cta h3 {
+  margin: 2.3rem 1rem 1rem 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 3.1rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63);
+}
+.cta span {
+  margin: 0 1rem;
+  padding: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+.cta a {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  text-decoration: none;
+  background-color: #14B2B8;
+  border-radius: 0.9rem;
+  margin: 1rem auto;
+  padding: 1.8rem;
+}
+
+a:active {
+  background-color: #24989c;
+}
+a:visited {
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+.cursos {
+  padding: 0.5rem 2rem 0rem 2rem;
+}
+.cursos h3 {
+  margin: 1.5rem 0.5rem 0.5rem 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.1rem;
+}
+.cursos p {
+  margin: 0 1rem;
+  padding: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.cursos .navigation {
+  padding: 1.5rem 0rem;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.cursos .navigation img {
+  width: 7.5rem;
+  height: inherit;
+}
+.cursos .card:nth-child(2) {
+  border-bottom: 3px solid #EAF5FF;
+  border-top: 3px solid #EAF5FF;
+}
+.cursos .cursos-cards {
+  border-radius: 2rem;
+  padding: 1.5rem 1rem;
+  background-color: #011936;
+}
+
+.metodo div:first-of-type {
+  max-width: 65.6rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+.metodo h2 {
+  font-weight: 700;
+  margin: 2.3rem 1rem 1rem 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 3.1rem;
+}
+.metodo span {
+  margin: 0 1rem;
+  padding: 0 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.metodo .card {
+  background-color: #011936;
+  border: 5px solid #446E88;
+  max-width: 27.2rem;
+  margin: auto;
+  padding: min(1.5rem, 25px);
+}
+.metodo .card:nth-child(3) {
+  margin: 1.5rem auto;
+}
+.metodo .card img {
+  width: min(85px, 25rem);
+}
+.metodo .card h2 {
+  display: inline;
+}
+.metodo .card p {
+  font-size: 1.6rem;
+}
+
+footer {
+  border-top: 0.15rem solid #F5F5F5;
+  background-color: #272525;
+  display: flex;
+  margin: 2.5rem 0 0 0;
+  padding: 0 1.2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+footer a {
+  color: #EAF5FF;
+  text-decoration: none;
+  text-align: center;
+}
+footer a img {
+  width: 2.5rem;
+}/*# sourceMappingURL=visitor-page.css.map */

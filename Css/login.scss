@@ -1,22 +1,24 @@
-html{
-  font-size: min(10px, 1vw);
+$branco: rgb(255, 255, 255);
+
+:root{
+  font-size: 62.5%;
 }
 
 body{
   font-family: 'Inter', sans-serif;
   background-image: url(/img/CTA\ Background.png);
-  
 }
 
 main{
   margin: min(10vw, 70%);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 31rem;
+  // justify-content: space-between;
 }
 
 main section{
-  color: #FFFFFF;
+  color: $branco;
   font-size: 4rem;
 }
 
@@ -26,23 +28,22 @@ main section h1{
 }
 
 .login-form{
-  padding: min(4.5rem, 3vw) min(3.3rem, 2rem);
+  padding: 4.5rem 3.3rem;
+  max-width: 41rem;
   border-style: solid;
   border-radius: 0.9rem;
   border-width: 0.3rem;
-  border-color: #FFFFFF;
+  border-color: $branco;
 }
 .login-form a {
   text-decoration: none;
-
-  color: rgb(237, 237, 237);
+  color: $branco;
   font-style: normal;
   font-size: 2.1rem;
 }
 
 .login-form a:hover{
   color: rgb(145, 143, 143);
-
 }
 
 .login-form input{
@@ -65,7 +66,7 @@ input::placeholder{
   font-size: normal;
   font-size: 3rem;
   padding: 1.7rem 14.4rem;
-  color: White;
+  color: $branco;
   border-radius: 0.9rem;
   background-color: #14B2B8;
 
