@@ -1,0 +1,74 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/CTA\ Background.png);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: rgb(234, 245, 255);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .texto {
+  text-align: center;
+  margin: 0 3.5rem;
+}
+main .texto h2 {
+  font-weight: 800;
+  font-size: 5.5rem;
+  line-height: 6.7rem;
+}
+main .texto p {
+  max-width: 41.8rem;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+}
+main .login-form {
+  gap: 2rem;
+  margin: 3rem;
+  padding: 2.5rem;
+  border: rgb(234, 245, 255) solid 3px;
+  border-radius: 9px;
+}
+main .login-form form .btn {
+  color: rgb(234, 245, 255);
+  font-size: 1.6rem;
+  height: 3.9rem;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background: rgb(20, 178, 184);
+  border: 0;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+main .login-form form .btn:hover {
+  background-color: rgb(234, 245, 255);
+}
+main .login-form form input {
+  height: 3.9rem;
+  width: 100%;
+  border-radius: 9px;
+  display: block;
+}
+main .login-form form a {
+  color: rgb(234, 245, 255);
+  text-decoration: none;
+  text-align: left;
+  margin-left: 3px;
+}
+main .login-form form a:hover {
+  color: rgb(20, 178, 184);
+}/*# sourceMappingURL=login-form.css.map */
