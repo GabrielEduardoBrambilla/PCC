@@ -15,6 +15,9 @@ body {
 }
 
 main {
+  width: 100vw;
+  height: inherit;
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +45,9 @@ main .login-form {
   border: rgb(234, 245, 255) solid 3px;
   border-radius: 9px;
 }
+main .login-form form span {
+  font-size: 1.2rem;
+}
 main .login-form form .btn {
   color: rgb(234, 245, 255);
   font-size: 1.6rem;
@@ -63,6 +69,9 @@ main .login-form form input {
   border-radius: 9px;
   display: block;
 }
+main .login-form form input:nth-child(2) {
+  margin-top: 1rem;
+}
 main .login-form form a {
   color: rgb(234, 245, 255);
   text-decoration: none;
@@ -71,4 +80,59 @@ main .login-form form a {
 }
 main .login-form form a:hover {
   color: rgb(20, 178, 184);
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main {
+    flex-direction: row;
+  }
+  main .texto {
+    text-align: left;
+    margin: 17.1rem 0 24.8rem 0;
+  }
+  main .texto h2 {
+    font-size: 7rem;
+    line-height: 7.3rem;
+  }
+  main .texto p {
+    max-width: 34rem;
+    margin-top: 7.5rem;
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  main .login-form {
+    width: 30rem;
+    margin-left: 23rem;
+    padding: 4.5rem 3.1rem;
+  }
+  main .login-form form span {
+    font-size: 2rem;
+  }
+  main .login-form form .btn {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    height: 7rem;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background: rgb(20, 178, 184);
+    margin-top: 3.2rem;
+  }
+  main .login-form form input {
+    height: 7rem;
+    width: 100%;
+  }
+  main .login-form form input::-moz-placeholder {
+    padding: 2rem;
+  }
+  main .login-form form input:-ms-input-placeholder {
+    padding: 2rem;
+  }
+  main .login-form form input::placeholder {
+    padding: 2rem;
+  }
 }/*# sourceMappingURL=login-form.css.map */
