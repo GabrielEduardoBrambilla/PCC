@@ -12,6 +12,8 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   color: rgb(234, 245, 255);
+  width: 100vw;
+  height: 100vh;
 }
 
 main {
