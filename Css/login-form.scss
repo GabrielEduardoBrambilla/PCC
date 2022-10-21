@@ -14,13 +14,15 @@ body{
   font-family: 'Inter', sans-serif;
   font-style: normal;
   color: $white;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
 main{
-  width: 100vw;
-  height: inherit;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin-top: auto;
   display: flex;
   flex-direction: column;
@@ -71,11 +73,16 @@ main{
       }
       input{
         height: 3.9rem;
-        width: 100%;
         border-radius: 9px;
+        padding-left: 1rem;
         display: block;
-        &:nth-child(2){
-          margin-top: 1rem;
+        &:nth-child(n){
+          margin-bottom: 0.5rem;
+        }
+        &::placeholder{
+          font-size: 1rem;
+          display: flex;
+          justify-content: space-around;
         }
       }
     
@@ -99,6 +106,7 @@ main{
   }
   main{
     flex-direction: row;
+    justify-content: space-evenly;
     .texto {
       text-align: left;
       margin: 17.1rem 0  24.8rem 0;
@@ -115,8 +123,6 @@ main{
     }
     .login-form{
       width: 30rem;
-      margin-left: 23rem;
-      padding: 4.5rem 3.1rem;
       form{
         span{
           font-size: 2rem;
@@ -133,8 +139,14 @@ main{
         input{
           height: 7rem;
           width: 100%;
+          width: 95%;
           &::placeholder{
-            padding:2rem;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-around;
+          }
+          &:nth-child(n){
+            margin-bottom: 1rem;
           }
         }
 

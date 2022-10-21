@@ -14,22 +14,52 @@
     <title>Register DevGate</title>
   </head>
   <a href="homepage-vist.html">HomePage</a>
+  <a href="login-form.html">login-form</a>
   <body>
     <main>
       <div class="texto">
         <h2>DevGate</h2>
-        <p>Entre nesse portal e aprenda a programar</p>
+        <p>Embarque nesse barco e aprenda a programar</p>
       </div>
       <div class="login-form">
         <form action="POST">
-          <input type="text" placeholder="LOGIN" />
-          <input type="text" placeholder="SENHA" />
-          <input type="text" placeholder="SENHA" />
-          <input type="text" placeholder="SENHA" />
-          <input type="text" placeholder="SENHA" />
-          <span><a href="#">recuperar senha</a></span>
-          <input class="btn" type="submit" value="Entrar" />
-          <span><a href="#">Novo? Registrar-se aqui!</a></span>
+          <input
+            type="text"
+            name="nomeUsuario"
+            placeholder="Nome Usuário"
+            maxlength="30"
+          />
+
+          <input
+            type="text"
+            name="nomeCompleto"
+            placeholder="Nome Completo"
+            maxlength="120"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="devgate@sicdev.com"
+            maxlength="60"
+          />
+
+          <input
+            type="password"
+            name="senha"
+            placeholder="Senha"
+            minlength="8"
+            maxlength="30"
+          />
+
+          <input type="date" name="dtNascimento" />
+
+          <select name="tipoUsuario" id="">
+            <option value="aluno">Aluno</option>
+            <option value="professor">Professor</option>
+            <option value="administrador">Administrador</option></select
+          ><br />
+          <input class="btn" type="submit" value="Registrar-se" />
         </form>
       </div>
     </main>
