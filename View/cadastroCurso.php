@@ -10,9 +10,8 @@
   
 <div class="main-cadastro">
     <div class="box-cadastro">
+        <h2>Cadastro de Curso</h2>
         <form method="POST" action="" class="form-cadastro">
-            <h2>Sign up</h2>
-
             <div class="inputBox-cadastro">
                 <?php
                 $nomeCurso = "";
@@ -20,9 +19,9 @@
                     $nomeCurso = $valueForm['nomeCurso'];
                 }
                 ?>
+
                 <input type="text" name="nomeCurso" id="name" value="<?php echo $nomeCurso ?>" required="required">
-                <span>Nome do curso</span>
-                <i></i>
+                
             </div>
 
             <div class="inputBox-cadastro">
@@ -32,9 +31,8 @@
                     $descricao = $valueForm['descricao'];
                 }
                 ?>
+                
                 <input type="descricao" name="descricao" id="descricao" value="<?php echo $descricao ?>" required="required">
-                <span>Descrição</span>
-                <i></i>
             </div>
 
             <div class="inputBox-cadastro">
