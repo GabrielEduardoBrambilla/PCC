@@ -1,5 +1,6 @@
 $white:rgba(234, 245, 255, 1);
 $light-blue: rgba(20, 178, 184, 1);
+$dark-blue: rgba(1, 25, 54, 1);
 
 :root{
   font-size: 62.5%;
@@ -17,6 +18,7 @@ body{
   background-color: rgba($color: #1154d8, $alpha: 1.0);
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  font-size: 1rem;
   color: $white;
   width: 100%;
   height: 100vh;
@@ -25,7 +27,7 @@ body{
 nav{
   height: 7.5rem;
   width: 100%;
-  background-color: rgba($color: #2793ba, $alpha: 1.0);
+  background-color: $dark-blue;
   display: flex;
   justify-content: space-between;
 
@@ -35,28 +37,27 @@ nav{
   display: flex;
   align-items: center;
   width: auto;
-  margin: 0;
+  margin-left: 2rem;
 }
 
 .logo{
-  margin-left: 2rem;
   font-size: 2.7rem;
 }
 
-.logo-txt{
-  font-size: 3rem;
-  line-height: 7.5rem;
-  padding-left: 1rem;
-  font-weight: bold;
-  color: whitesmoke;
-}
+// .logo-txt{
+//   font-size: 3rem;
+//   line-height: 7.5rem;
+//   padding-left: 1rem;
+//   font-weight: bold;
+//   color: whitesmoke;
+// }
 
 .nav-list{
   position: fixed;
   width: 100%;
   height: 0vh;
   top: 7.5rem;
-  background: #2a3b51;
+  background: $dark-blue;
   float: right;
   text-align: center;
   transition: all .5s;
@@ -69,10 +70,13 @@ nav{
     a{
       color: whitesmoke;
       font-size: 2rem;
-      text-transform: uppercase;
       transition: all 2s;
     }
   }
+}
+
+.login-btn{
+  display: none;
 }
 
 .hamburger-btn{
@@ -96,30 +100,43 @@ nav{
 #check:checked ~ .nav-list li{
   display: block;
 }
+.desktop-list{
+  display: none;
+}
 
 @media (min-width: 768px) {
-  .hamburger-btn{
-    display: none;
-  }
-
-  .nav-list{
-    position: relative;
-    top: 0;
-    float: right;
-    text-align: right;
-    margin-right: 2.5rem;
-    transition: none;
-    
-    li{
-      display: inline-block;
-      margin: 0 2rem;
-      line-height: auto;
-    
-    
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    #check + .hamburger-btn{
+      display: none;
     }
 
+    .desktop-list{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
 
-  
+    .login-btn{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      img{
+        
+      }
+    }
+    
+    .mobile{
+      display: none;
+    }
+    
   }
+
 
 }
