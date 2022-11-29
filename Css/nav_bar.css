@@ -39,6 +39,14 @@ nav {
   font-size: 2.7rem;
 }
 
+a:visited {
+  color: rgb(234, 245, 255);
+}
+
+a:hover {
+  color: rgb(20, 178, 184);
+}
+
 .nav-list {
   position: fixed;
   width: 100%;
@@ -62,6 +70,19 @@ nav {
 
 .login-btn {
   display: none;
+}
+
+.login-mobile {
+  display: flex;
+}
+.login-mobile a {
+  border: 2px solid rgb(234, 245, 255);
+  border-radius: 9px;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+.login-mobile img {
+  transform: translateY(33%);
 }
 
 .hamburger-btn {
@@ -100,19 +121,44 @@ nav {
     display: none;
   }
   nav .desktop-list {
+    text-decoration: none;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    font-size: 1.6rem;
+  }
+  nav .desktop-list li + li {
+    border-left: 3px solid rgb(234, 245, 255);
+    border-radius: 0.3rem;
+    padding: 0 0 0 2rem;
   }
   nav .login-btn {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    margin-right: 3rem;
+  }
+  nav .login-btn a {
+    font-size: 1.6rem;
+  }
+  nav .login-btn img {
+    transform: translateY(50%);
   }
   nav .mobile {
     display: none;
+  }
+}
+@media (min-width: 1440px) {
+  nav .logo-container {
+    margin: 0 0 0 6rem;
+  }
+  nav .logo {
+    font-size: 3.6rem;
+  }
+  nav .desktop-list li a {
+    font-size: 2rem;
+  }
+  nav .login-btn {
+    padding-right: 3rem;
   }
 }/*# sourceMappingURL=nav_bar.css.map */

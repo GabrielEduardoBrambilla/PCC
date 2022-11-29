@@ -52,6 +52,14 @@ nav{
 //   color: whitesmoke;
 // }
 
+a:visited{
+  color: $white;
+ }
+ 
+ a:hover{
+   color: $light-blue;
+ }
+
 .nav-list{
   position: fixed;
   width: 100%;
@@ -77,6 +85,18 @@ nav{
 
 .login-btn{
   display: none;
+}
+.login-mobile{
+  display: flex;
+  a{
+    border: 2px solid $white;
+    border-radius: 9px;
+    padding: 2rem;
+    font-size: 1.6rem;
+  }
+  img{
+    transform: translateY(33%);
+  }
 }
 
 .hamburger-btn{
@@ -115,20 +135,30 @@ nav{
     }
 
     .desktop-list{
+      text-decoration: none;
       display: flex;
       align-content: center;
       justify-content: center;
       align-items: center;
       gap: 3rem;
+      font-size: 1.6rem;
+
+      li + li{
+        border-left: 3px solid $white;
+        border-radius: 0.3rem;
+        padding: 0 0 0 2rem;
+      }
     }
 
     .login-btn{
       display: flex;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
+      margin-right: 3rem;
+      
+      a{
+        font-size: 1.6rem;
+      }
       img{
-        
+        transform: translateY(50%);
       }
     }
     
@@ -138,5 +168,32 @@ nav{
     
   }
 
+
+}
+@media (min-width: 1440px) {
+  nav{
+
+    .logo-container{
+      margin: 0 0 0 6rem;
+    }
+  
+    .logo{
+      font-size: 3.6rem ;
+    }
+  
+    .desktop-list{
+      li{
+        a{
+          font-size: 2rem;
+        }
+      }
+    }
+
+
+    .login-btn{
+      padding-right: 3rem;
+      
+    }
+  }
 
 }
