@@ -1,0 +1,6 @@
+#check-html:checked {
+  color: black;
+}
+#check-html:checked .curso-2 {
+  background-color: red;
+}/*# sourceMappingURL=homepage.css.map */

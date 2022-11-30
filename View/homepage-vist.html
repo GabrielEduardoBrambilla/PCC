@@ -4,10 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/Css/nav_bar.css" />
+    <link rel="stylesheet" href="/Css/homepage.css" />
+    <script
+      src="https://kit.fontawesome.com/08626bfbba.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>DevGate Homepage</title>
   </head>
   <body>
     <a href="login-form.html">Fazer login!____</a>
     <a href="register-form.html">Registrar-se na plataforma!</a>
+
+    <header>
+      <nav>
+        <div class="logo-container">
+          <h2 class="logo">DevGate</h2>
+        </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="hamburger-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="nav-list mobile">
+          <li><a href="">Home</a></li>
+          <li><a href="">Html</a></li>
+          <li><a href="">Java</a></li>
+          <li><a href="">Css</a></li>
+          <li><a href="">Sobre</a></li>
+          <li class="login-mobile">
+            <a href="register-form.html">
+              <img src="../img/user 1.svg" alt="Delineado de uma pessoa" />
+              Login
+            </a>
+          </li>
+        </ul>
+
+        <ul class="desktop-list">
+          <li><a href="">Home</a></li>
+          <li>
+            <a href="" class="bar"></a>
+            <a href="">Html</a>
+          </li>
+          <li><a href="">Java</a></li>
+          <li><a href="">Css</a></li>
+          <li><a href="">Sobre</a></li>
+        </ul>
+
+        <div class="login-btn">
+          <a href="register-form.html">
+            <img src="../img/user 1.svg" alt="Delineado de uma pessoa" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="cta">
+      <h3>DevGate entre seu caminho no mundo da programação</h3>
+      <p>Os melhores cursos gratuitos da web em um só lugar</p>
+      <button>Descobrir cursos!</button>
+    </div>
+    <main>
+      <div class="mobile-view">
+        <div class="cursos-select-mobile">
+          <img src="../img/html.png" alt="" />
+          <img src="../img/java.png" alt="" />
+          <img src="../img/css.png" alt="" />
+        </div>
+        <div class="curso1-content-mobile">
+          <h4>HTML 5 Básico</h4>
+          <p>
+            Descrição: Curso que vai do básico ao intermediario, para pessoas
+            que possuem nenhum ou pouco conhecimento na area. Ensino baseado em
+            projetos basicos e práticos
+          </p>
+        </div>
+        <div class="curso2-content-mobile">
+          <h4>Java e Orientação a Objeto</h4>
+          <p>
+            Descrição: Curso que vai do básico ao avançado, para aprendizado do
+            paradigma de orientação a objetos Ensino baseado em projetos basicos
+            e práticos intermediario e avançados
+          </p>
+        </div>
+        <div class="curso3-content-mobile">
+          <h4>CSS e Estilização de Páginas</h4>
+          <p>
+            Descrição: Curso que vai do básico ao intermediario, para inicio do
+            aprendizado de estilização de páginas com introdução a boaspraticas
+            funções de reponsividade Ensino baseado em projetos práticos básicos
+            e intermediarios
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <!-- <div class="desktop-view">
+        <div class="curso">
+          <img src="../img/html.png" alt="" />
+          <h4>HTML 5 Básico</h4>
+          <p>
+            Descrição: Curso que vai do básico ao intermediario, para pessoas
+            que possuem nenhum ou pouco conhecimento na area. Ensino baseado em
+            projetos basicos e práticos
+          </p>
+        </div>
+        <hr />
+        <div class="curso-2">
+          <img src="../img/java.png" alt="" />
+          <h4>HTML 5 Básico</h4>
+          <p>
+            Descrição: Curso que vai do básico ao intermediario, para pessoas
+            que possuem nenhum ou pouco conhecimento na area. Ensino baseado em
+            projetos basicos e práticos
+          </p>
+        </div>
+        <hr />
+        <div class="curso">
+          <img src="../img/css.png" alt="" />
+          <h4>HTML 5 Básico</h4>
+          <p>
+            Descrição: Curso que vai do básico ao intermediario, para pessoas
+            que possuem nenhum ou pouco conhecimento na area. Ensino baseado em
+            projetos basicos e práticos
+          </p>
+        </div>
+      </div> -->
+    </main>
   </body>
 </html>

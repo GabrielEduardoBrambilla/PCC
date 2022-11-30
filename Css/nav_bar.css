@@ -107,6 +107,11 @@ a:hover {
   display: block;
 }
 
+#check:checked ~ section.content {
+  display: none;
+  background-color: red;
+}
+
 .desktop-list {
   display: none;
 }
