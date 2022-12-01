@@ -216,6 +216,7 @@ footer .contato img {
   main .desktop-view {
     background-color: rgb(1, 25, 54);
     padding-bottom: 3rem;
+    border-radius: 0.9rem;
   }
   main .desktop-view .curso {
     display: flex;
@@ -229,8 +230,14 @@ footer .contato img {
   main .desktop-view .curso img {
     -o-object-fit: cover;
        object-fit: cover;
-    width: 6.2rem;
-    height: 5.7rem;
+    max-width: 20.9rem;
+    max-height: 20.9rem;
+  }
+  main .desktop-view hr {
+    border-radius: 0.9rem;
+    border: 3px solid red;
+    margin: auto;
+    width: 90%;
   }
   main .desktop-view div h4 {
     max-width: 46rem;
