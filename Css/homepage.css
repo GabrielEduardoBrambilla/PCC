@@ -1,6 +1,327 @@
-#check-html:checked {
-  color: black;
+.section {
+  background-image: url(../img/CTA\ Background.png);
 }
-#check-html:checked .curso-2 {
-  background-color: red;
+.section .cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1rem;
+  padding-top: 1.6rem;
+}
+.section .cta h3 {
+  max-width: 56.4rem;
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 3.1rem;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63);
+  margin-top: 2rem;
+  margin-bottom: 1.3rem;
+}
+.section .cta p {
+  max-width: 56.4rem;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.section .cta button {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: rgb(234, 245, 255);
+  background-color: rgb(20, 178, 184);
+  margin: 1.4rem 1.6rem 3.1rem 1.6rem;
+  border-color: rgb(20, 178, 184);
+  border-radius: 0.9rem;
+  padding: 0.8rem 1.6rem;
+  max-width: 25.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(234, 245, 255);
+}
+main .mobile-view {
+  background-color: rgb(1, 25, 54);
+  padding-bottom: 3rem;
+}
+main .mobile-view .cursos-select-mobile {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(1, 25, 54);
+  padding: 1.6rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+main .mobile-view .cursos-select-mobile img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 6.2rem;
+  height: 5.7rem;
+}
+main .mobile-view div h4 {
+  max-width: 46rem;
+  text-align: center;
+  margin: 2.4rem 0 1rem 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
+}
+main .mobile-view div p {
+  max-width: 46rem;
+  margin: 0 1rem;
+  padding: 0 4rem;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+main .mobile-view div hr {
+  max-width: 46rem;
+  border-color: rgb(234, 245, 255);
+  border-width: 0.1rem;
+  margin: 2rem 3rem 0 3rem;
+}
+main .metodo {
+  display: flex;
+  flex-direction: column;
+  background-color: #1F1D1D;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main .metodo h2 {
+  margin: 4rem 0 1rem 0;
+  margin-top: 4rem;
+  max-width: 52.3rem;
+  font-size: 2.4rem;
+}
+main .metodo p {
+  max-width: 42.8rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin: 0 1rem 3rem 1rem;
+}
+main .metodo .card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(1, 25, 54);
+  border: 5px solid #446E88;
+  padding: 1.5rem;
+  align-items: left;
+  text-align: left;
+  margin: 1rem;
+}
+main .metodo .card img {
+  width: 8.5rem;
+  height: 8.5rem;
+}
+main .metodo .card h4 {
+  max-width: 28.7rem;
+  font-style: normal;
+  font-size: 2.2rem;
+  margin: 3rem 0;
+}
+main .metodo .card p {
+  max-width: 28.7rem;
+  margin: 0;
+}
+main .metodo .card + .card {
+  margin-top: 3rem;
+}
+main .desktop-view {
+  display: none;
+}
+
+footer {
+  border-top: 2px solid #322F2F;
+  background-color: #1F1D1D;
+}
+footer .texto {
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+footer .texto p {
+  font-size: 1.1rem;
+}
+footer .contato {
+  padding: 0.5rem 3rem;
+  background-color: #322F2F;
+}
+footer .contato img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+@media (min-width: 425px) {
+  main .metodo .card {
+    padding: 2.5rem;
+    margin: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  main .desktop-view {
+    display: block;
+  }
+  main .mobile-view {
+    display: none;
+  }
+  .section .cta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 1rem;
+    padding-top: 1.6rem;
+  }
+  .section .cta h3 {
+    max-width: 56.4rem;
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 3.1rem;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63);
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
+  }
+  .section .cta p {
+    max-width: 56.4rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .section .cta button {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: rgb(234, 245, 255);
+    background-color: rgb(20, 178, 184);
+    margin: 1.4rem 1.6rem 3.1rem 1.6rem;
+    border-color: rgb(20, 178, 184);
+    border-radius: 0.9rem;
+    padding: 0.8rem 1.6rem;
+    max-width: 25.2rem;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(234, 245, 255);
+  }
+  main .mobile-view {
+    background-color: rgb(1, 25, 54);
+    padding-bottom: 3rem;
+  }
+  main .mobile-view .cursos-select-mobile {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(1, 25, 54);
+    padding: 1.6rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+  }
+  main .mobile-view .cursos-select-mobile img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 6.2rem;
+    height: 5.7rem;
+  }
+  main .mobile-view div h4 {
+    max-width: 46rem;
+    text-align: center;
+    margin: 2.4rem 0 1rem 1rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+  }
+  main .mobile-view div p {
+    max-width: 46rem;
+    margin: 0 1rem;
+    padding: 0 4rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+  main .mobile-view div hr {
+    max-width: 46rem;
+    border-color: rgb(234, 245, 255);
+    border-width: 0.1rem;
+    margin: 2rem 3rem 0 3rem;
+  }
+  main .metodo {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F1D1D;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main .metodo h2 {
+    margin: 4rem 0 1rem 0;
+    margin-top: 4rem;
+    max-width: 52.3rem;
+    font-size: 2.4rem;
+  }
+  main .metodo p {
+    max-width: 42.8rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 0 1rem 3rem 1rem;
+  }
+  main .metodo .card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 25, 54);
+    border: 5px solid #446E88;
+    padding: 1.5rem;
+    align-items: left;
+    text-align: left;
+    margin: 1rem;
+  }
+  main .metodo .card img {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+  main .metodo .card h4 {
+    max-width: 28.7rem;
+    font-style: normal;
+    font-size: 2.2rem;
+    margin: 3rem 0;
+  }
+  main .metodo .card p {
+    max-width: 28.7rem;
+    margin: 0;
+  }
+  main .metodo .card + .card {
+    margin-top: 3rem;
+  }
+  footer {
+    border-top: 2px solid #322F2F;
+    background-color: #1F1D1D;
+  }
+  footer .texto {
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+  }
+  footer .texto p {
+    font-size: 1.1rem;
+  }
+  footer .contato {
+    padding: 0.5rem 3rem;
+    background-color: #322F2F;
+  }
+  footer .contato img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }/*# sourceMappingURL=homepage.css.map */

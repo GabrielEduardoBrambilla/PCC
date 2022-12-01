@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #1154d8;
+  background-color: #78274f;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 1rem;
@@ -109,7 +109,6 @@ a:hover {
 
 #check:checked ~ section.content {
   display: none;
-  background-color: red;
 }
 
 .desktop-list {
