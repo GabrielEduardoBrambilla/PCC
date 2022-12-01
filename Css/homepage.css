@@ -177,13 +177,13 @@ footer .contato img {
     align-items: center;
     flex-direction: column;
     margin: 0 1rem;
-    padding-top: 1.6rem;
+    padding-top: 5.2rem;
   }
   .section .cta h3 {
     max-width: 56.4rem;
     font-weight: 700;
-    font-size: 2.3rem;
-    line-height: 3.1rem;
+    font-size: 4rem;
+    line-height: 4.8rem;
     align-items: center;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63);
@@ -194,17 +194,17 @@ footer .contato img {
     max-width: 56.4rem;
     align-items: center;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
   .section .cta button {
-    font-size: 2rem;
+    font-size: 2.4rem;
     line-height: 2.4rem;
     color: rgb(234, 245, 255);
     background-color: rgb(20, 178, 184);
-    margin: 1.4rem 1.6rem 3.1rem 1.6rem;
+    margin: 3.4rem 1.6rem 5.7rem 1.6rem;
     border-color: rgb(20, 178, 184);
     border-radius: 0.9rem;
-    padding: 0.8rem 1.6rem;
+    padding: 1.1rem 2.6rem;
     max-width: 25.2rem;
   }
   main {
@@ -213,11 +213,11 @@ footer .contato img {
     align-items: center;
     background-color: rgb(234, 245, 255);
   }
-  main .mobile-view {
+  main .desktop-view {
     background-color: rgb(1, 25, 54);
     padding-bottom: 3rem;
   }
-  main .mobile-view .cursos-select-mobile {
+  main .desktop-view .curso {
     display: flex;
     flex-direction: row;
     background-color: rgb(1, 25, 54);
@@ -226,13 +226,13 @@ footer .contato img {
     text-align: center;
     justify-content: space-around;
   }
-  main .mobile-view .cursos-select-mobile img {
+  main .desktop-view .curso img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 6.2rem;
     height: 5.7rem;
   }
-  main .mobile-view div h4 {
+  main .desktop-view div h4 {
     max-width: 46rem;
     text-align: center;
     margin: 2.4rem 0 1rem 1rem;
@@ -241,14 +241,14 @@ footer .contato img {
     font-size: 1.9rem;
     line-height: 2.3rem;
   }
-  main .mobile-view div p {
+  main .desktop-view div p {
     max-width: 46rem;
     margin: 0 1rem;
     padding: 0 4rem;
     font-size: 1.4rem;
     line-height: 1.7rem;
   }
-  main .mobile-view div hr {
+  main .desktop-view div hr {
     max-width: 46rem;
     border-color: rgb(234, 245, 255);
     border-width: 0.1rem;

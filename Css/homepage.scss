@@ -202,6 +202,9 @@ footer{
   }
 }
 
+
+
+
 @media (min-width: 768px) {
   main{
     .desktop-view{
@@ -218,13 +221,13 @@ footer{
       align-items: center;
       flex-direction: column;
       margin: 0 1rem ;
-      padding-top: 1.6rem;
+      padding-top: 5.2rem;
       
       h3{
         max-width: 56.4rem;
         font-weight: 700;
-        font-size: 2.3rem;
-        line-height: 3.1rem;
+        font-size: 4rem;
+        line-height: 4.8rem;
         align-items: center;
         text-align: center;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.63);
@@ -235,19 +238,19 @@ footer{
         max-width: 56.4rem;
         align-items: center;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 2.8rem;
       }
       button{
-        font-size: 2rem;
+        font-size: 2.4rem;
         line-height: 2.4rem;
         color: $white;
   
         background-color: $light-blue;
-        margin: 1.4rem 1.6rem 3.1rem 1.6rem;
+        margin: 3.4rem 1.6rem 5.7rem 1.6rem;
   
         border-color: $light-blue;
         border-radius: .9rem;
-        padding: .8rem 1.6rem;
+        padding: 1.1rem 2.6rem;
         max-width: 25.2rem;
       }
   
@@ -263,11 +266,11 @@ footer{
     background-color: $white;
     
     
-    .mobile-view{
+    .desktop-view{
       background-color: $dark-blue;
       padding-bottom: 3rem;
       
-      .cursos-select-mobile{
+      .curso{
         display: flex;
         flex-direction: row;
         background-color: $dark-blue;
