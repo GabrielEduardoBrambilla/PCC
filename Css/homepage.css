@@ -214,15 +214,17 @@ footer .contato img {
     background-color: rgb(234, 245, 255);
   }
   main .desktop-view {
+    z-index: 1;
     background-color: rgb(1, 25, 54);
     padding-bottom: 3rem;
+    padding-top: 1rem;
     border-radius: 0.9rem;
   }
   main .desktop-view .curso {
     display: flex;
     flex-direction: row;
     background-color: rgb(1, 25, 54);
-    padding: 1.6rem;
+    padding: 5rem 3.6rem 4.4rem;
     align-items: center;
     text-align: center;
     justify-content: space-around;
@@ -233,54 +235,69 @@ footer .contato img {
     max-width: 20.9rem;
     max-height: 20.9rem;
   }
-  main .desktop-view hr {
-    border-radius: 0.9rem;
-    border: 3px solid red;
-    margin: auto;
-    width: 90%;
-  }
   main .desktop-view div h4 {
     max-width: 46rem;
-    text-align: center;
+    text-align: left;
     margin: 2.4rem 0 1rem 1rem;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.9rem;
-    line-height: 2.3rem;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   main .desktop-view div p {
     max-width: 46rem;
+    text-align: left;
     margin: 0 1rem;
-    padding: 0 4rem;
-    font-size: 1.4rem;
-    line-height: 1.7rem;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
   }
-  main .desktop-view div hr {
-    max-width: 46rem;
-    border-color: rgb(234, 245, 255);
-    border-width: 0.1rem;
-    margin: 2rem 3rem 0 3rem;
+  main .desktop-view hr {
+    border-radius: 0.9rem;
+    border: 3px solid rgb(234, 245, 255);
+    margin: auto;
+    width: 90%;
+  }
+  main .metodo::before {
+    position: absolute;
+    content: "";
+    top: 142rem;
+    width: 100%;
+    height: 70px;
+    z-index: 0;
+    display: block;
+    background-color: #1F1D1D;
   }
   main .metodo {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     background-color: #1F1D1D;
     text-align: center;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
-  main .metodo h2 {
-    margin: 4rem 0 1rem 0;
-    margin-top: 4rem;
-    max-width: 52.3rem;
-    font-size: 2.4rem;
+  main .metodo .metodo-text {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin: 0 2rem;
   }
-  main .metodo p {
-    max-width: 42.8rem;
+  main .metodo .metodo-text h2 {
+    max-width: 41rem;
+    margin: 4rem 1rem 3rem 1rem;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    text-align: left;
+  }
+  main .metodo .metodo-text p {
+    max-width: 45.8rem;
+    margin: 4rem 1rem 3rem 1rem;
     font-weight: 500;
-    font-size: 1.6rem;
-    margin: 0 1rem 3rem 1rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: right;
   }
   main .metodo .card {
     display: flex;
@@ -291,6 +308,7 @@ footer .contato img {
     align-items: left;
     text-align: left;
     margin: 1rem;
+    margin-bottom: 3rem;
   }
   main .metodo .card img {
     width: 8.5rem;
@@ -307,7 +325,7 @@ footer .contato img {
     margin: 0;
   }
   main .metodo .card + .card {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   footer {
     border-top: 2px solid #322F2F;
