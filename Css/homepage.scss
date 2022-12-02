@@ -337,7 +337,7 @@ footer{
       width: 100%;
       .metodo-text{
         justify-content: space-around;
-        align-items: center;
+        // align-items: center;
         display: flex;
         width: 100%;
         margin: 0 2rem;
@@ -402,28 +402,4 @@ footer{
       
   }
   
-  footer{
-    border-top: 2px solid #322F2F;
-  
-    background-color: $new-black;
-    .texto{
-      padding: 2rem 3rem ;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 1.8rem;
-      p{
-        font-size: 1.1rem;
-      }
-    }
-    .contato{
-      padding: .5rem 3rem;
-      background-color: $footer-black;
-      img{
-        width: 3.5rem;
-        height: 3.5rem;
-      }
-    }
-  }
-
 }
