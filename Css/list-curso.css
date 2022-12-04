@@ -1,16 +1,35 @@
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(234, 245, 255);
 }
 main .explainer {
-  background-color: red;
+  opacity: 0.9;
+  padding: 2rem;
+}
+main .explainer h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+}
+main .explainer p {
+  font-size: 2rem;
+}
+main .explainer::before {
+  content: "-";
+  width: 100%;
+  height: 28vh;
+  top: 0;
+  left: 0;
+  position: absolute;
   background-color: #000000;
-  opacity: 0.8;
   background-image: linear-gradient(30deg, #121666 12%, transparent 12.5%, transparent 87%, #121666 87.5%, #121666), linear-gradient(150deg, #121666 12%, transparent 12.5%, transparent 87%, #121666 87.5%, #121666), linear-gradient(30deg, #121666 12%, transparent 12.5%, transparent 87%, #121666 87.5%, #121666), linear-gradient(150deg, #121666 12%, transparent 12.5%, transparent 87%, #121666 87.5%, #121666), linear-gradient(60deg, rgba(18, 22, 102, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(18, 22, 102, 0.4666666667) 75%, rgba(18, 22, 102, 0.4666666667)), linear-gradient(60deg, rgba(18, 22, 102, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(18, 22, 102, 0.4666666667) 75%, rgba(18, 22, 102, 0.4666666667));
   background-size: 32px 56px;
   background-position: 0 0, 0 0, 16px 28px, 16px 28px, 0 0, 16px 28px;
+  z-index: -10;
 }
 main .desktop-view {
   z-index: 1;
@@ -63,6 +82,25 @@ main .desktop-view hr {
     flex-direction: column;
     align-items: center;
     background-color: rgb(234, 245, 255);
+  }
+  main .explainer {
+    opacity: 0.9;
+    padding: 2rem;
+  }
+  main .explainer h2 {
+    text-align: left;
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  main .explainer p {
+    max-width: 46rem;
+    text-align: left;
+    font-size: 2.2rem;
+  }
+  main .explainer::before {
+    content: "-";
+    width: 100%;
+    height: 18.9rem;
   }
   main .desktop-view {
     width: 76.1rem;

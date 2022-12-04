@@ -1,0 +1,62 @@
+$footer-black: #322F2F;
+$new-black: #1F1D1D;
+
+
+
+.texto::before{
+  position: absolute;
+  background-color: $new-black;
+  content: '';
+ 
+  top: -5rem;
+  left: 0;
+
+  width: 100%;
+  height: 4.8rem;
+ 
+  z-index: 0;
+
+
+}
+
+footer{
+  position: relative;
+
+  border-top: 2px solid $footer-black;
+
+  background-color: $new-black;
+  .texto{
+    padding: 2rem 3rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    p{
+      font-size: 1.1rem;
+    }
+  }
+  .contato{
+    padding: .5rem 3rem;
+    background-color: $footer-black;
+    img{
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+}
+
+// <footer>
+// <div class="texto">
+//   <h2>DevGate</h2>
+//   <p>
+//     DevGate 2022
+//     <br />
+//     Todos os direitos reservados
+//   </p>
+// </div>
+// <div class="contato">
+//   <a target="_blank" href="https://www.gmail.com">
+//     <img src="/img/Gmail-Logo.svg" alt="" />
+//   </a>
+// </div>
+// </footer>
