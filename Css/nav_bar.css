@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #78274f;
+  background-color: #a9a666;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 1rem;
@@ -83,7 +83,9 @@ a:hover {
   font-size: 1.6rem;
 }
 .login-mobile img {
-  transform: translateY(33%);
+  width: 2.7rem;
+  height: 2.7rem;
+  transform: translateY(20%);
 }
 
 .hamburger-btn {
@@ -142,6 +144,24 @@ a:hover {
     border-left: 3px solid rgb(234, 245, 255);
     border-radius: 0.3rem;
     padding: 0 0 0 2rem;
+  }
+  nav .desktop-list .right-border {
+    border-left: 0px solid rgb(234, 245, 255);
+    border-right: 3px solid rgb(234, 245, 255);
+    border-radius: 0.3rem;
+    padding: 0 2rem 0 0rem;
+  }
+  nav .desktop-list .adms-btn {
+    cursor: pointer;
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    border: 3px solid rgb(234, 245, 255);
+    border-radius: 0.9rem;
+  }
+  nav .desktop-list .adms-btn .adm-icon {
+    width: 4rem;
+    height: 4rem;
   }
   nav .login-btn {
     display: flex;

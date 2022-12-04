@@ -1,0 +1,22 @@
+main .desktop-view {
+  z-index: 1;
+  background-color: rgb(1, 25, 54);
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+  border-radius: 0.9rem;
+}
+main .desktop-view .curso {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(1, 25, 54);
+  padding: 5rem 3.6rem 4.4rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+main .desktop-view .curso img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 20.9rem;
+  max-height: 20.9rem;
+}/*# sourceMappingURL=list-curso.css.map */

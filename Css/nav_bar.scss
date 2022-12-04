@@ -14,8 +14,11 @@ $dark-blue: rgba(1, 25, 54, 1);
   box-sizing: border-box;
 }
 
+
+
+
 body{
-  background-color: rgba($color: #78274f, $alpha: 1.0);
+  background-color: rgba($color: #a9a666, $alpha: 1.0);
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 1rem;
@@ -97,7 +100,9 @@ a:visited{
     font-size: 1.6rem;
   }
   img{
-    transform: translateY(33%);
+    width: 2.7rem;
+    height:  2.7rem;
+    transform: translateY(20%);
   }
 }
 
@@ -156,6 +161,35 @@ a:visited{
         border-radius: 0.3rem;
         padding: 0 0 0 2rem;
       }
+
+      .right-border{
+        border-left: 0px solid $white;
+
+        border-right: 3px solid $white;
+        border-radius: 0.3rem;
+        padding: 0 2rem 0 0rem;
+      }
+
+      .adms-btn{
+        cursor: pointer;
+        display: flex;
+
+        padding: .5rem 1rem;
+        // padding: 2rem .5rem .5rem 4rem;
+        align-items: center;
+
+        border: 3px solid $white;
+        border-radius: .9rem;
+
+
+        .adm-icon{
+          
+
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+
     }
 
     .login-btn{
