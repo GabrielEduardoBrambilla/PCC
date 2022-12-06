@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(234, 245, 255);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 4.5rem 0;
+}
+main .curso {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(1, 25, 54);
+  max-width: 600px;
+  margin: 8rem 0 4rem 0;
+  padding: 6rem 2rem 3rem 2rem;
+  border-radius: 0.9rem;
+}
+main .curso img {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  transform: translateY(-35%);
+  width: 10rem;
+  height: inherit;
+}
+main .curso .curso-text {
+  margin: 2rem 0 0 0;
+}
+main .curso .curso-text h2 {
+  font-size: 2.2rem;
+}
+main .curso .curso-text p {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+main .curso .join-btn {
+  text-align: end;
+  padding: 1rem 0 0 0;
+}
+main .curso .join-btn a {
+  padding: 1rem;
+  font-size: 1.8rem;
+  border-radius: 0.9rem;
+  background-color: rgb(20, 178, 184);
+}/*# sourceMappingURL=view-curso.css.map */

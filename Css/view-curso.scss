@@ -1,0 +1,71 @@
+$white:rgba(234, 245, 255, 1);
+$light-blue: rgba(20, 178, 184, 1);
+$dark-blue: rgba(1, 25, 54, 1);
+
+body{
+  background-color: $white;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+
+
+  margin: 0 0 4.5rem 0;
+
+  .curso{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: $dark-blue;
+    
+    max-width: 600px;
+
+
+    margin: 5+3rem 0 4rem 0;
+    padding: 5+1rem 2rem 3rem 2rem;
+
+    border-radius: .9rem;
+
+    img{
+      position: absolute;
+
+      top: 0;
+      left: 2rem;
+
+      transform: translateY(-35%);
+
+      width: 10rem;
+      height: inherit;
+    }
+
+    .curso-text{
+      margin: 2rem 0 0 0 ;
+      h2{
+        font-size: 2.2rem;
+      }
+      p{
+        font-size: 1.8rem;
+        margin: 1rem 0;
+      }
+    }
+    
+    .join-btn{
+      text-align: end;
+      padding: 1rem 0 0 0;
+
+      a{
+        padding: 1rem;
+        font-size: 1.8rem;
+
+        border-radius: .9rem;
+        background-color: $light-blue;
+  
+      }
+    }
+    
+
+  }
+}
