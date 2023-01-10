@@ -140,6 +140,15 @@ a:visited{
 @media (min-width: 768px) {
   
   nav{
+
+    .logo-container{
+      margin: 0 0 0 6rem;
+    }
+
+    .logo{
+      font-size: 3.6rem ;
+    }
+
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -189,12 +198,17 @@ a:visited{
           height: 4rem;
         }
       }
-
+      li{
+        a{
+          font-size: 2rem;
+        }
+      }
     }
 
     .login-btn{
       display: flex;
       margin-right: 3rem;
+
       
       a{
         font-size: 1.6rem;
@@ -215,26 +229,8 @@ a:visited{
 @media (min-width: 950px) {
   nav{
 
-    .logo-container{
-      margin: 0 0 0 6rem;
-    }
-  
-    .logo{
-      font-size: 3.6rem ;
-    }
-  
-    .desktop-list{
-      li{
-        a{
-          font-size: 2rem;
-        }
-      }
-    }
-
-
     .login-btn{
-      padding-right: 3rem;
-      
+      padding-right: 1rem;
     }
   }
 
