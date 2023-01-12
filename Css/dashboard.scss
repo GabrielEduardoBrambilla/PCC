@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
-$primary: #7380ec;
+$primary:  rgb(11, 111, 234);
 $sucess: #41f1b6;
 $warning: #ffbb55;
 $white: #fff;
@@ -117,7 +117,11 @@ b{
   width: 96%;
   margin: 0 auto;
   gap: 1.8rem;
-  grid-template-columns: 14rem auto 23rem;
+  grid-template-columns: 14rem auto;
+
+  .criar-curso{
+    background-color: $white;
+  }
 }
 
 aside{

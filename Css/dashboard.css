@@ -82,7 +82,7 @@ b {
 }
 
 .primary {
-  color: #7380ec;
+  color: rgb(11, 111, 234);
 }
 
 .sucess {
@@ -98,7 +98,10 @@ b {
   width: 96%;
   margin: 0 auto;
   gap: 1.8rem;
-  grid-template-columns: 14rem auto 23rem;
+  grid-template-columns: 14rem auto;
+}
+.container .criar-curso {
+  background-color: #fff;
 }
 
 aside {
@@ -106,7 +109,7 @@ aside {
   background-color: #fff;
 }
 aside .top {
-  background-color: #7380ec;
+  background-color: rgb(11, 111, 234);
   color: #fff;
   display: flex;
   align-items: center;
@@ -153,21 +156,21 @@ aside .sidebar a:last-child {
 }
 aside .sidebar a.active {
   background: rgba(132, 139, 200, 0.18);
-  color: #7380ec;
+  color: rgb(11, 111, 234);
   margin-left: 0;
 }
 aside .sidebar a.active::before {
   content: "";
   width: 6px;
   height: 100%;
-  background: #7380ec;
+  background: rgb(11, 111, 234);
 }
 aside .sidebar a.active span {
-  color: #7380ec;
+  color: rgb(11, 111, 234);
   margin-left: calc(1rem - 3px);
 }
 aside .sidebar a:hover {
-  color: #7380ec;
+  color: rgb(11, 111, 234);
 }
 aside .sidebar a:hover span {
   margin-left: 1rem;
