@@ -106,7 +106,8 @@ aside {
   background-color: #fff;
 }
 aside .top {
-  background-color: red;
+  background-color: #7380ec;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
