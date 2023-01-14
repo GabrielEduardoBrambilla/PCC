@@ -82,7 +82,7 @@ b {
 }
 
 .primary {
-  color: rgb(11, 111, 234);
+  color: rgb(103, 58, 36);
 }
 
 .sucess {
@@ -109,7 +109,7 @@ aside {
   background-color: #fff;
 }
 aside .top {
-  background-color: rgb(11, 111, 234);
+  background-color: rgb(103, 58, 36);
   color: #fff;
   display: flex;
   align-items: center;
@@ -156,21 +156,21 @@ aside .sidebar a:last-child {
 }
 aside .sidebar a.active {
   background: rgba(132, 139, 200, 0.18);
-  color: rgb(11, 111, 234);
+  color: rgb(103, 58, 36);
   margin-left: 0;
 }
 aside .sidebar a.active::before {
   content: "";
   width: 6px;
   height: 100%;
-  background: rgb(11, 111, 234);
+  background: rgb(103, 58, 36);
 }
 aside .sidebar a.active span {
-  color: rgb(11, 111, 234);
+  color: rgb(103, 58, 36);
   margin-left: calc(1rem - 3px);
 }
 aside .sidebar a:hover {
-  color: rgb(11, 111, 234);
+  color: rgb(103, 58, 36);
 }
 aside .sidebar a:hover span {
   margin-left: 1rem;
