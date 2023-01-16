@@ -14,10 +14,22 @@
   </head>
   <body>
     <div class="container">
+      <nav class="mobile-nav">
+        <div class="wrapper">
+          <span class="material-symbols-sharp " id="menu-btn"> menu </span>
+          <div class="logo-wrap">
+            <div class="logo">
+              <img src="/img/logo-devgate.png" alt="" />
+              <h2>DevGate</h2>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <aside>
         <div class="top">
           <div class="logo">
-            <img src="/img/adm-icon.png" alt="" />
+            <img src="/img/logo-devgate.png" alt="" />
             <h2>DevGate</h2>
           </div>
           <div class="close" id="close-btn">
@@ -25,25 +37,25 @@
           </div>
         </div>
         <div class="sidebar">
-          <a href="#" class="">
+          <a href="<?= URLADM; ?>dashboard/index" class="">
             <span class="material-symbols-sharp"> grid_view </span>
             <h3>DashBoard</h3>
           </a>
-          <a href="#">
+          <a href="<?= URLADM; ?>cadastro-curso/index">
             <span class="material-symbols-sharp"> menu_book </span>
             <h3>Criar Curos</h3>
           </a>
-          <a href="#" class="">
+          <a class="active" href="<?= URLADM; ?>list-cursos/index" class="">
             <span class="material-symbols-sharp"> format_list_bulleted </span>
             <h3>Listar Curso</h3>
           </a>
-          <a href="#">
+          <a href="<?= URLADM; ?>list-usuarios/index">
             <span class="material-symbols-sharp"> group </span>
             <h3>Listar Alunos</h3>
           </a>
-          <a href="#">
-            <span class="material-symbols-sharp"> star </span>
-            <h3>...</h3>
+          <a href="<?= URLADM; ?>edit-email-info/index">
+            <span class="material-symbols-sharp"> email </span>
+            <h3>Editar Email</h3>
           </a>
           <a href="#">
             <span class="material-symbols-sharp"> logout </span>
@@ -54,110 +66,18 @@
 
       <!-- Todo conteudo que for criar coloca dentro da dessa div criar-curso, o grid vai deixar arrumado automaticamente -->
       <div class="criar-curso">
-        <div class="criar-curso">
-          ID: 1 <br />Nome do usuário: MarcelaDosGatos <br />Email:
-          marcelaTurim@Gmail.com <br /><a
-            href="http://localhost/Devgate_rebuild/admin-view-usuario/index/1"
-          >
-            Visualizar </a
-          ><br /><a
-            href="http://localhost/Devgate_rebuild/admin-edit-users/index/1"
-          >
-            Editar </a
-          ><br /><br />
-          <hr />
-          ID: 2 <br />Nome do usuário: DanielDeCalcinha <br />Email:
-          daniel@hotmail.com <br /><a
-            href="http://localhost/Devgate_rebuild/admin-view-usuario/index/2"
-          >
-            Visualizar </a
-          ><br /><a
-            href="http://localhost/Devgate_rebuild/admin-edit-users/index/2"
-          >
-            Editar </a
-          ><br /><br />
-          <hr />
-          ID: 3 <br />Nome do usuário: Felipe <br />Email: felipe@gmail.com
-          <br /><a
-            href="http://localhost/Devgate_rebuild/admin-view-usuario/index/3"
-          >
-            Visualizar </a
-          ><br /><a
-            href="http://localhost/Devgate_rebuild/admin-edit-users/index/3"
-          >
-            Editar </a
-          ><br /><br />
-          <hr />
-          ID: 4 <br />Nome do usuário: Felipe2 <br />Email: felipe@gmail.com
-          <br /><a
-            href="http://localhost/Devgate_rebuild/admin-view-usuario/index/4"
-          >
-            Visualizar </a
-          ><br /><a
-            href="http://localhost/Devgate_rebuild/admin-edit-users/index/4"
-          >
-            Editar </a
-          ><br /><br />
-          <hr />
-          ID: 5 <br />Nome do usuário: Felipe Silva <br />Email:
-          felipe@gmail.com <br /><a
-            href="http://localhost/Devgate_rebuild/admin-view-usuario/index/5"
-          >
-            Visualizar </a
-          ><br /><a
-            href="http://localhost/Devgate_rebuild/admin-edit-users/index/5"
-          >
-            Editar </a
-          ><br /><br />
-          <hr />
-          ID: 6 <br />Nome do usuário: Felipe23232 <br />Email: felipe@gmail.com
-          <br /><a
-            href="http://localhost/Devgate_rebuild/admin-view-usuario/index/6"
-          >
-            Visualizar </a
-          ><br /><a
-            href="http://localhost/Devgate_rebuild/admin-edit-users/index/6"
-          >
-            Editar </a
-          ><br /><br />
-          <hr />
-          ID: 7 <br />Nome do usuário: Teste1 <br />Email: Test1@Gmail.com
-          <br /><a
-            href="http://localhost/Devgate_rebuild/admin-view-usuario/index/7"
-          >
-            Visualizar </a
-          ><br /><a
-            href="http://localhost/Devgate_rebuild/admin-edit-users/index/7"
-          >
-            Editar </a
-          ><br /><br />
-          <hr />
-          ID: 8 <br />Nome do usuário: asasdasd <br />Email:
-          sadassa@sdfsadsadd.com <br /><a
-            href="http://localhost/Devgate_rebuild/admin-view-usuario/index/8"
-          >
-            Visualizar </a
-          ><br /><a
-            href="http://localhost/Devgate_rebuild/admin-edit-users/index/8"
-          >
-            Editar </a
-          ><br /><br />
-          <hr />
-          ID: 9 <br />Nome do usuário: TesteUPDATEdoDaniel <br />Email:
-          Felipe2@Gmail.com <br /><a
-            href="http://localhost/Devgate_rebuild/admin-view-usuario/index/9"
-          >
-            Visualizar </a
-          ><br /><a
-            href="http://localhost/Devgate_rebuild/admin-edit-users/index/9"
-          >
-            Editar </a
-          ><br /><br />
-          <hr />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam neque necessitatibus sed culpa porro quis. Ad doloribus dolores aliquam tempora nobis, placeat, repellendus eius vitae odit, sunt nulla dolore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita laboriosam earum tenetur eos nisi. Dicta eum doloribus quasi debitis, consectetur, fugiat quam, laboriosam amet laudantium animi esse corporis laborum quae.
+                  Quidem tempore totam ducimus repellat, laborum doloremque consequuntur nihil sit optio provident ipsum voluptate quisquam veritatis eveniet dolore. Aliquid ullam non pariatur, error iusto sed perferendis mollitia nulla assumenda inventore!
+                  Mollitia officia ea molestiae omnis beatae inventore perspiciatis cum eveniet tempore, architecto ullam velit ex nulla blanditiis quas voluptas quisquam odio, non deleniti. Tempora nam autem minus, odio et voluptas.
+                  Ut ab possimus illo esse tempore, deleniti cumque aspernatur sunt, laborum corporis quasi modi ea libero eligendi praesentium, et minus perspiciatis aut nobis impedit quia autem? Debitis veritatis repellendus aspernatur.
+                  Natus eligendi in laborum vitae quia error earum illum. Voluptates reprehenderit iste, ipsum eaque quae qui asperiores explicabo facilis eum est iure, aliquam error recusandae vitae inventore repudiandae nisi voluptatibus.
+                </p>  <hr />
         </div>
       </div>
     </div>
 
     <footer></footer>
+    <script src="/JS/dashboard.js"></script>
   </body>
 </html>

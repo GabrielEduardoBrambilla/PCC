@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
-$primary:  rgb(103, 58, 36);
-$sucess: #41f1b6;
-$warning: #ffbb55;
-$white: #fff;
-$info-dark: #7d8da1;
-$info-light: #dce1eb;
-$dark: #363949;
-$light: rgba(132, 139, 200, 0.18);
-$primary-variant: #111e88;
-$dark-variant: #677483;
-$background: #f6f6f9;
+@import 'variable.scss';
 
 $card-border-radius: 1rem;
 $border-radius-1: 0.4rem;
@@ -33,40 +23,37 @@ $box-shadow: 0 2rem 2rem $light;
   box-sizing: border-box;
 }
 
-html{
-  font-size: 14px;
+:root{
+  font-size: 62.5%;
 }
-
 body{
   width: 100vw;
   height: 100vh;
   font-family: Poppins, sans-serif;
-  font-size: 0.88rem;
-  background-color: $background;
+  font-size: 2rem;
+  background-color: $dark;
   user-select: none;
   overflow-x: hidden;
-
+  justify-content: center;
 }
-
 a{
   color: $dark;
 }
-
 img{
   display: block;
   width: 100%;
 }
-
 h1{
   font-weight: 800;
   font-size: 1.8rem;
 }
-
 h2{
-  font-size: 1.4rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
 }
 h3{
-  font-size: .87rem;
+  font-size: 1.4rem;
 }
 
 h4{
@@ -75,7 +62,6 @@ h4{
 h5{
   font-size: .77rem;
 }
-
 small{
   font-size: .75rem;
 }
@@ -94,7 +80,6 @@ small{
 p{
   color: $dark-variant;
 }
-
 b{
   color: $dark;
 }
@@ -108,41 +93,50 @@ b{
 .warning{
   color: $warning;
 }
-
-
-
-
+.mobile-nav{
+  display: none;
+}
 .container{
   display: grid;
   width: 96%;
   margin: 0 auto;
   gap: 1.8rem;
-  grid-template-columns: 14rem auto;
+  grid-template-columns: 22.4rem auto;
 
   .criar-curso{
-    background-color: $white;
+    background-color: $background;
+    p{
+      color: $white;
+    }
   }
 }
 
 aside{
+  position: sticky;
   height: 100vh;
-  background-color: $white;
+  background-color: $background;
+  position: sticky;
 
   .top{
-    background-color: $primary;
+    background-color: $background;
     color: $white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 1.4rem;
+    gap: 1rem;
+    
   }
 
   .logo{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 0.8rem;
+    margin-left: 1rem;
     img{
-      width: 2srem;
-      height: 2rem;
+      width: 3rem;
+      height: inherit;
     }
   }
 
@@ -152,7 +146,7 @@ aside{
   }
 
   .sidebar{
-    background: $white;
+    background: $background;
     display: flex;
     flex-direction: column;
     height: 86vh;
@@ -170,7 +164,7 @@ aside{
       transition: all 300ms ease;
 
       span{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         transition: all 300ms ease;
       }
 
@@ -183,25 +177,25 @@ aside{
       
       &.active{
         background: $light;
-        color: $primary;
+        color: $font;
         margin-left: 0;
         
         &::before{
           content: '';
           width: 6px;
           height: 100%;
-          background: $primary ;
+          background: $font ;
         }
       
         span{
-          color: $primary;
+          color: $font;
           margin-left: calc(1rem - 3px);
         } 
   
       }
 
       &:hover{
-        color: $primary;
+        color: $font;
         span{
           margin-left: 1rem;
         }
@@ -215,3 +209,201 @@ aside{
   }
 
 }
+
+@media (max-width: 600px) {
+
+  .not-in-display{
+    display: none;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+    width: 100%;
+    grid-template-columns: 0 0;
+    margin: auto;
+  }
+  .top{
+
+    .close{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .mobile-nav{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $background;
+    // margin-bottom: 6vh;
+    height: 6vh;
+    .wrapper{
+      display: flex;
+      justify-content: space-between;
+      width: 96%;
+
+      span{
+        color: $white;
+      }
+      .logo{
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-left: 1rem;
+        img{
+          width: 3rem;
+          height: inherit;
+        }
+      }
+    
+      .logo-wrap{
+        display: flex;
+        flex-direction: row;
+        color: $white;
+      }
+
+    }
+  }
+
+  aside{
+    position: fixed;
+    left: 0;
+    background: $background;
+    width: 18rem;
+    z-index: 0;
+    box-shadow: 1rem 3rem 4rem $light;
+    height: 100vh;
+    padding-right: $card-padding;
+    display: none;
+
+    transition: all 300ms ease;
+
+    .logo{
+      margin-left: 1rem;
+      
+    }
+    h2{
+      display: inline;
+    }
+    
+    .sidebar{
+      h3{
+      display: inline;
+      }
+
+      a{
+        width: 100%;
+        height: 3.4rem;
+
+        &:last-child{
+          position: absolute;
+          bottom: 5rem;
+        }
+
+      }
+    }
+
+    .close{
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
+  .criar-curso{
+    margin: auto;
+    width: 96%;
+    padding: 1rem 1rem 1rem 1.5rem;
+    p{
+      color: $white;
+
+    }
+  }
+
+
+}
+
+main{
+  // background-color: $dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin: auto 0;
+  table{
+    background: $white;
+    border-radius: .9rem;
+    padding: $card-padding;
+    text-align: center;
+    box-shadow: $box-shadow;
+    transition: all 300ms ease;
+    height: auto;
+    width: 96%;
+    color: $dark;
+    margin: 1rem auto auto auto;
+  //  thead{
+  //   // display: none;
+  //  }
+   
+   tbody{
+     text-align: center;
+    tr{
+      .options{
+        a{
+          color: $font;
+          
+          &:hover{
+            color: $dark;
+            
+          }
+        }
+
+      }
+    }
+   }
+
+  }
+    
+}
+
+
+  .search {
+    width: 96%;
+    position: relative;
+    display: flex;
+    box-shadow: 0 .5rem .5rem $light;
+
+  }
+  
+  .searchTerm {
+    width: 100%;
+
+    border: 3px solid $dark;
+    border-right: none;
+    padding: 5px;
+    height: 3.6rem;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #a9d2bf;
+  }
+  
+  .searchButton {
+
+    width: 40px;
+    height: 36px;
+    border: 3px solid $dark;
+
+    background: $dark;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 9px 9px 0;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+

@@ -11,21 +11,22 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 14px;
+:root {
+  font-size: 62.5%;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   font-family: Poppins, sans-serif;
-  font-size: 0.88rem;
-  background-color: #f6f6f9;
+  font-size: 2rem;
+  background-color: #363949;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   overflow-x: hidden;
+  justify-content: center;
 }
 
 a {
@@ -43,11 +44,13 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 0.87rem;
+  font-size: 1.4rem;
 }
 
 h4 {
@@ -70,7 +73,7 @@ small {
 }
 
 .text-muted {
-  color: #7d8da1;
+  color: #e3e3e3;
 }
 
 p {
@@ -82,7 +85,7 @@ b {
 }
 
 .primary {
-  color: rgb(103, 58, 36);
+  color: rgb(1, 25, 54);
 }
 
 .sucess {
@@ -93,42 +96,56 @@ b {
   color: #ffbb55;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .container {
   display: grid;
   width: 96%;
   margin: 0 auto;
   gap: 1.8rem;
-  grid-template-columns: 14rem auto;
+  grid-template-columns: 22.4rem auto;
 }
 .container .criar-curso {
-  background-color: #fff;
+  background-color: #181a1e;
+}
+.container .criar-curso p {
+  color: rgb(234, 245, 255);
 }
 
 aside {
+  position: -webkit-sticky;
+  position: sticky;
   height: 100vh;
-  background-color: #fff;
+  background-color: #181a1e;
+  position: sticky;
 }
 aside .top {
-  background-color: rgb(103, 58, 36);
-  color: #fff;
+  background-color: #181a1e;
+  color: rgb(234, 245, 255);
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 1.4rem;
+  gap: 1rem;
 }
 aside .logo {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 0.8rem;
+  margin-left: 1rem;
 }
 aside .logo img {
-  width: 2srem;
-  height: 2rem;
+  width: 3rem;
+  height: inherit;
 }
 aside .close {
   display: none;
 }
 aside .sidebar {
-  background: #fff;
+  background: #181a1e;
   display: flex;
   flex-direction: column;
   height: 86vh;
@@ -137,7 +154,7 @@ aside .sidebar {
 }
 aside .sidebar a {
   display: flex;
-  color: #7d8da1;
+  color: #e3e3e3;
   margin-left: 2rem;
   gap: 1rem;
   align-items: center;
@@ -146,7 +163,7 @@ aside .sidebar a {
   transition: all 300ms ease;
 }
 aside .sidebar a span {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   transition: all 300ms ease;
 }
 aside .sidebar a:last-child {
@@ -155,26 +172,180 @@ aside .sidebar a:last-child {
   width: 100%;
 }
 aside .sidebar a.active {
-  background: rgba(132, 139, 200, 0.18);
-  color: rgb(103, 58, 36);
+  background: rgba(0, 0, 0, 0.4);
+  color: #a3bdcc;
   margin-left: 0;
 }
 aside .sidebar a.active::before {
   content: "";
   width: 6px;
   height: 100%;
-  background: rgb(103, 58, 36);
+  background: #a3bdcc;
 }
 aside .sidebar a.active span {
-  color: rgb(103, 58, 36);
+  color: #a3bdcc;
   margin-left: calc(1rem - 3px);
 }
 aside .sidebar a:hover {
-  color: rgb(103, 58, 36);
+  color: #a3bdcc;
 }
 aside .sidebar a:hover span {
   margin-left: 1rem;
 }
 aside h3 {
   font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .not-in-display {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+    width: 100%;
+    grid-template-columns: 0 0;
+    margin: auto;
+  }
+  .top .close {
+    display: flex;
+    align-items: center;
+  }
+  .mobile-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #181a1e;
+    height: 6vh;
+  }
+  .mobile-nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+  }
+  .mobile-nav .wrapper span {
+    color: rgb(234, 245, 255);
+  }
+  .mobile-nav .wrapper .logo {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-left: 1rem;
+  }
+  .mobile-nav .wrapper .logo img {
+    width: 3rem;
+    height: inherit;
+  }
+  .mobile-nav .wrapper .logo-wrap {
+    display: flex;
+    flex-direction: row;
+    color: rgb(234, 245, 255);
+  }
+  aside {
+    position: fixed;
+    left: 0;
+    background: #181a1e;
+    width: 18rem;
+    z-index: 0;
+    box-shadow: 1rem 3rem 4rem rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    padding-right: 1.8rem;
+    display: none;
+    transition: all 300ms ease;
+  }
+  aside .logo {
+    margin-left: 1rem;
+  }
+  aside h2 {
+    display: inline;
+  }
+  aside .sidebar h3 {
+    display: inline;
+  }
+  aside .sidebar a {
+    width: 100%;
+    height: 3.4rem;
+  }
+  aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 5rem;
+  }
+  aside .close {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .criar-curso {
+    margin: auto;
+    width: 96%;
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+  .criar-curso p {
+    color: rgb(234, 245, 255);
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin: auto 0;
+}
+main table {
+  background: rgb(234, 245, 255);
+  border-radius: 0.9rem;
+  padding: 1.8rem;
+  text-align: center;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4);
+  transition: all 300ms ease;
+  height: auto;
+  width: 96%;
+  color: #363949;
+  margin: 1rem auto auto auto;
+}
+main table tbody {
+  text-align: center;
+}
+main table tbody tr .options a {
+  color: #a3bdcc;
+}
+main table tbody tr .options a:hover {
+  color: #363949;
+}
+
+.search {
+  width: 96%;
+  position: relative;
+  display: flex;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #363949;
+  border-right: none;
+  padding: 5px;
+  height: 3.6rem;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #a9d2bf;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 3px solid #363949;
+  background: #363949;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 9px 9px 0;
+  cursor: pointer;
+  font-size: 2rem;
 }/*# sourceMappingURL=dashboard.css.map */
