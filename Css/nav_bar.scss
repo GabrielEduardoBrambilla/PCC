@@ -1,7 +1,7 @@
 $white:rgba(234, 245, 255, 1);
 $light-blue: rgba(20, 178, 184, 1);
 $dark-blue: rgba(1, 25, 54, 1);
-
+$bg-color: linear-gradient(to bottom right, rgb(18, 42, 71), $dark-blue );
 :root{
   font-size: 62.5%;
 }
@@ -18,7 +18,7 @@ $dark-blue: rgba(1, 25, 54, 1);
 
 
 body{
-  background-color: rgba($color: #a9a666, $alpha: 1.0);
+  background: $bg-color;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 1rem;

@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #a9a666;
+  background: linear-gradient(to bottom right, rgb(18, 42, 71), rgb(1, 25, 54));
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 1rem;

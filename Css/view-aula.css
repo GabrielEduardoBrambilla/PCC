@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
 :root {
-  --primary: linear-gradient(to bottom right, #0a0057, #3f00ee);
+  --primary: linear-gradient(to bottom right, #6860a7, #b88716);
   --secondary: gold;
   --text: #fff;
+  font-size: 62.5%;
 }
 
 * {
@@ -11,21 +13,38 @@
 }
 
 body {
-  min-height: 100vh;
-  background-image: var(--primary);
-  font-family: sans-serif;
-  color: var(--text);
-  display: flex;
-  align-items: center;
+  font-family: Poppins, sans-serif;
 }
 
-.container {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1.8fr 1.2fr;
-  gap: 1rem;
-  padding: 0.5rem 1rem;
-  text-transform: capitalize;
+a {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.content .text-content {
+  margin: 1rem 0.5rem;
+}
+.content .titulo-aula {
+  font-size: 2rem;
+}
+
+.class-list {
+  border-radius: 0.9rem;
+  border: 3px solid #fff;
+  box-shadow: 0 2rem 2rem rgba(132, 139, 200, 0.18);
+  background-color: rgb(118, 118, 118);
+}
+
+.video-playlist .title {
+  padding: 0.5rem;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 990px) {
@@ -119,4 +138,4 @@ body {
   text-overflow: ellipsis;
   font: 100 1rem sans-serif;
   padding: 0 0.5rem;
-}/*# sourceMappingURL=video-playlist-gallery.css.map */
+}/*# sourceMappingURL=view-aula.css.map */

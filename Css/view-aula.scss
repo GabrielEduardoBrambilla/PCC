@@ -1,0 +1,176 @@
+
+:root {
+  --primary : linear-gradient(to bottom right, #6860a7, #b88716);
+  --secondary : gold;
+  --text : #fff;
+
+  font-size: 62.5%;
+}
+
+$primary:  rgb(103, 58, 36);
+$sucess: #41f1b6;
+$warning: #ffbb55;
+$white: #fff;
+$info-dark: #7d8da1;
+$info-light: #dce1eb;
+$dark: #363949;
+$light: rgba(132, 139, 200, 0.18);
+$primary-variant: #111e88;
+$dark-variant: #677483;
+$background: #f6f6f9;
+
+$box-shadow: 0 2rem 2rem $light;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family:Poppins, sans-serif;
+
+}
+
+
+a{
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+
+// .video-wrap{
+//   // width: auto;
+// }
+.content{
+  .text-content{
+    margin: 1rem .5rem;
+  }
+  .titulo-aula{
+    font-size: 2rem;
+  }
+
+}
+
+.class-list{
+  border-radius: .9rem;
+  border: 3px solid $white ;
+  box-shadow: $box-shadow;
+  // color: $dark;
+  background-color:rgb(118, 118, 118);
+}
+
+.video-playlist{
+  .title{
+    padding: .5rem;
+    font-size: 1.3rem;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .container {
+      grid-template-columns: 1fr;
+  }
+}
+
+.main-video, .video-playlist {
+  width: 100%;
+  height: 30rem;
+}
+
+.main-video .title {
+  margin-top: 1rem;
+}
+
+.video-playlist .title {
+  padding-left: 1rem;
+}
+
+.video-playlist > p {
+  padding: 1rem;
+  color: var(--secondary);
+}
+
+.video-playlist .videos{
+  height: 70%;
+  overflow-y: auto;
+}
+
+.video-playlist .videos::-webkit-scrollbar {
+  width: .4rem;
+  border-radius: .4rem;
+  background-color: #0005;
+}
+
+.video-playlist .videos::-webkit-scrollbar-thumb {
+  border-radius: .4rem;
+  background-color: #fff;
+}
+
+.video-playlist .videos .video {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 1rem;
+  margin-top: .1rem;
+  cursor: pointer;
+
+  border-radius: .5rem;
+}
+
+.video-playlist .videos .video:hover {
+  background-color: #0003;
+}
+
+.video-playlist .videos .video.active {
+  background-color: #0003;
+  color: var(--secondary);
+}
+
+.main-video video {
+  width: 100%;
+  border-radius: .5rem;
+}
+
+.video img {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 1.5rem;
+  height: 1.5rem;
+  
+  filter: invert(100%);
+}
+
+.video-playlist .videos .video.active img {
+  filter: invert(100%) sepia(100%) saturate(2000%) hue-rotate(360deg);
+}
+
+.video p {
+ margin-left: 2.5rem;
+}
+
+.video h3 {
+  width: 23rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font: 100 1rem sans-serif;
+  padding: 0 .5rem;
+}
