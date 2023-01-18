@@ -1,25 +1,9 @@
+@import './variable.scss';
 
 :root {
-  --primary : linear-gradient(to bottom right, #6860a7, #b88716);
-  --secondary : gold;
-  --text : #fff;
-
-  font-size: 62.5%;
+   font-size: 62.5%;
 }
 
-$primary:  rgb(103, 58, 36);
-$sucess: #41f1b6;
-$warning: #ffbb55;
-$white: #fff;
-$info-dark: #7d8da1;
-$info-light: #dce1eb;
-$dark: #363949;
-$light: rgba(132, 139, 200, 0.18);
-$primary-variant: #111e88;
-$dark-variant: #677483;
-$background: #f6f6f9;
-
-$box-shadow: 0 2rem 2rem $light;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
@@ -32,9 +16,11 @@ $box-shadow: 0 2rem 2rem $light;
 
 body{
   font-family:Poppins, sans-serif;
-
 }
-
+main{
+  background-color: $dark-blue;
+  height: 100%;
+}
 
 a{
   text-decoration: none;
@@ -50,8 +36,30 @@ a:visited{
 //   // width: auto;
 // }
 .content{
+  margin-top: 1rem;
+  width: 100%;
+  margin: auto;
+  background-color: $dark-blue;
+
+  .video-wrap{
+    padding-top: 1rem;
+    width: min(108rem, 100%);
+    height: 30vh;
+    margin: auto;
+  }
   .text-content{
-    margin: 1rem .5rem;
+    max-width: 70rem ;
+    padding: 1rem .5rem 2.3rem .5rem;
+
+    .titulo-aula{
+    width: min(75rem, 95%);
+
+    }
+    .desc-aula{
+    width: min(75rem, 95%);
+
+    }
+    margin: auto;
   }
   .titulo-aula{
     font-size: 2rem;
@@ -60,11 +68,11 @@ a:visited{
 }
 
 .class-list{
+  margin: auto;
   border-radius: .9rem;
-  border: 3px solid $white ;
-  box-shadow: $box-shadow;
+  max-width: 45rem;
   // color: $dark;
-  background-color:rgb(118, 118, 118);
+  background-color: $primary-variant;
 }
 
 .video-playlist{
@@ -100,7 +108,7 @@ a:visited{
 }
 
 .video-playlist .videos{
-  height: 70%;
+  height: 80%;
   overflow-y: auto;
 }
 
@@ -137,7 +145,7 @@ a:visited{
 
 .video-playlist .videos .video.active {
   background-color: #0003;
-  color: var(--secondary);
+  color: $warning;
 }
 
 .main-video video {
@@ -173,4 +181,40 @@ a:visited{
 
   font: 100 1rem sans-serif;
   padding: 0 .5rem;
+}
+@media (min-width: 768px) {
+  main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    .video-playlist{
+      .title{
+        padding: .5rem;
+        font-size: 1.8rem;
+      }
+    }
+    .content{
+      height: 100%;
+      position: relative;
+      top: 0;
+      background-color: $dark;
+      .video-wrap{
+        padding: 0;
+        height: 50.2rem;
+      }
+      .text-content{
+        align-items: left;
+        margin: auto 2rem;
+        text-align: left;
+      }
+    }
+
+
+    .class-list{
+      height: 96%;
+      .videos{
+      height: 100%;
+
+      }
+    }
+  }
 }
