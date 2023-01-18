@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #a9a666;
+  background: linear-gradient(to bottom right, rgb(18, 42, 71), rgb(1, 25, 54));
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 1rem;
@@ -26,9 +26,6 @@ nav {
   background-color: rgb(1, 25, 54);
   display: flex;
   justify-content: space-between;
-}
-nav .close {
-  display: none;
 }
 
 .logo-container {
@@ -92,8 +89,8 @@ a:hover {
 }
 
 .hamburger-btn {
-  display: none;
-  font-size: 5rem;
+  display: block;
+  font-size: 3rem;
   color: white;
   float: right;
   line-height: 7.5rem;
@@ -131,14 +128,14 @@ a:hover {
     justify-content: space-between;
     flex-direction: row;
   }
-  nav .hamburger-btn {
-    display: inline-block;
-  }
   nav .logo-container {
     margin: 0 0 0 6rem;
   }
   nav .logo {
     font-size: 3.6rem;
+  }
+  nav #check + .hamburger-btn {
+    display: none;
   }
   nav .desktop-list {
     text-decoration: none;
