@@ -1,39 +1,12 @@
 main {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(234, 245, 255);
 }
-main .explainer {
-  opacity: 0.9;
-  padding: 2rem;
-}
-main .explainer h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  font-weight: bold;
-  margin: 0 0 0.5rem 0;
-}
-main .explainer p {
-  font-size: 2rem;
-}
-main .explainer::before {
-  content: "-";
-  width: 100%;
-  height: 28vh;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-color: #000000;
-  background-image: linear-gradient(30deg, #121666 12%, transparent 12.5%, transparent 87%, #121666 87.5%, #121666), linear-gradient(150deg, #121666 12%, transparent 12.5%, transparent 87%, #121666 87.5%, #121666), linear-gradient(30deg, #121666 12%, transparent 12.5%, transparent 87%, #121666 87.5%, #121666), linear-gradient(150deg, #121666 12%, transparent 12.5%, transparent 87%, #121666 87.5%, #121666), linear-gradient(60deg, rgba(18, 22, 102, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(18, 22, 102, 0.4666666667) 75%, rgba(18, 22, 102, 0.4666666667)), linear-gradient(60deg, rgba(18, 22, 102, 0.4666666667) 25%, transparent 25.5%, transparent 75%, rgba(18, 22, 102, 0.4666666667) 75%, rgba(18, 22, 102, 0.4666666667));
-  background-size: 32px 56px;
-  background-position: 0 0, 0 0, 16px 28px, 16px 28px, 0 0, 16px 28px;
-  z-index: -10;
-}
 main .desktop-view {
   z-index: 1;
-  background-color: rgb(1, 25, 54);
+  background-color: rgb(13, 8, 72);
   padding-bottom: 3rem;
   padding-top: 1rem;
   border-radius: 0.9rem;
@@ -42,7 +15,7 @@ main .desktop-view .curso {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgb(1, 25, 54);
+  background-color: rgb(13, 8, 72);
   padding: 2rem 1.6rem 1.4rem;
   align-items: center;
   text-align: left;
@@ -71,79 +44,52 @@ main .desktop-view hr {
   margin: 1rem 1.5rem 0 1.5rem;
 }
 
-@media (min-width: 425px) {
-  .desktop-view {
-    width: 42.5rem;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(234, 245, 255);
 }
-@media (min-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(234, 245, 255);
-  }
-  main .explainer {
-    opacity: 0.9;
-    padding: 2rem;
-  }
-  main .explainer h2 {
-    text-align: left;
-    font-weight: 800;
-    font-size: 5rem;
-  }
-  main .explainer p {
-    max-width: 46rem;
-    text-align: left;
-    font-size: 2.2rem;
-  }
-  main .explainer::before {
-    content: "-";
-    width: 100%;
-    height: 20.9rem;
-  }
-  main .desktop-view {
-    width: 76.1rem;
-    z-index: 1;
-    background-color: rgb(1, 25, 54);
-    padding-bottom: 3rem;
-    padding-top: 1rem;
-    border-radius: 0.9rem;
-  }
-  main .desktop-view .curso {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(1, 25, 54);
-    padding: 5rem 3.6rem 4.4rem;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-  }
-  main .desktop-view .curso img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 20.9rem;
-    height: 20.9rem;
-  }
-  main .desktop-view .left-text h4 {
-    max-width: 46rem;
-    text-align: left;
-    margin: 2.4rem 0 1rem 1rem;
-    font-weight: 800;
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-  main .desktop-view .left-text p {
-    max-width: 46rem;
-    text-align: left;
-    margin: 0 1rem;
-    font-size: 2.2rem;
-    line-height: 2.5rem;
-  }
-  main .desktop-view hr {
-    border-radius: 0.9rem;
-    border: 3px solid rgb(234, 245, 255);
-    margin: auto;
-    width: 90%;
-  }
+main .desktop-view {
+  z-index: 1;
+  background-color: rgb(13, 8, 72);
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+  border-radius: 0.9rem;
+}
+main .desktop-view .curso {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(13, 8, 72);
+  padding: 5rem 3.6rem 4.4rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+main .desktop-view .curso img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 20.9rem;
+  max-height: 20.9rem;
+}
+main .desktop-view div h4 {
+  max-width: 46rem;
+  text-align: left;
+  margin: 2.4rem 0 1rem 1rem;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+main .desktop-view div p {
+  max-width: 46rem;
+  text-align: left;
+  margin: 0 1rem;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+}
+main .desktop-view hr {
+  border-radius: 0.9rem;
+  border: 3px solid rgb(234, 245, 255);
+  margin: auto;
+  width: 90%;
 }/*# sourceMappingURL=list-curso.css.map */
