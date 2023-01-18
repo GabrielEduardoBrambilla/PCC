@@ -1,7 +1,7 @@
 $white:rgba(234, 245, 255, 1);
 $light-blue: rgba(20, 178, 184, 1);
 $dark-blue: rgba(1, 25, 54, 1);
-$bg-color: linear-gradient(to bottom right, rgb(18, 42, 71), $dark-blue );
+
 :root{
   font-size: 62.5%;
 }
@@ -14,11 +14,8 @@ $bg-color: linear-gradient(to bottom right, rgb(18, 42, 71), $dark-blue );
   box-sizing: border-box;
 }
 
-
-
-
 body{
-  background: $bg-color;
+  background-color: rgba($color: #a9a666, $alpha: 1.0);
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 1rem;
@@ -34,6 +31,9 @@ nav{
   display: flex;
   justify-content: space-between;
   
+  .close{
+    display: none;
+  }
 
 }
 
@@ -107,14 +107,16 @@ a:visited{
 }
 
 .hamburger-btn{
-  display: block;
-  font-size: 3rem;
+  display: none;
+  font-size: 5rem;
   color: white;
   float: right;
   line-height: 7.5rem;
   margin-right: 4rem;
   cursor: pointer ;
 }
+
+
 
 #check{
   display: none;
@@ -138,9 +140,11 @@ a:visited{
 }
 
 @media (min-width: 768px) {
-  
+ 
   nav{
-
+    .hamburger-btn{
+      display: inline-block;
+    }
     .logo-container{
       margin: 0 0 0 6rem;
     }
@@ -149,12 +153,13 @@ a:visited{
       font-size: 3.6rem ;
     }
 
+    
+
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    #check + .hamburger-btn{
-      display: none;
-    }
+    
+
 
     .desktop-list{
       text-decoration: none;
@@ -228,7 +233,6 @@ a:visited{
 }
 @media (min-width: 950px) {
   nav{
-
     .login-btn{
       padding-right: 1rem;
     }
