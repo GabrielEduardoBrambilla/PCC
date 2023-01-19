@@ -9,3 +9,8 @@ loginBtn.addEventListener('click', function () {
 closeBtn.addEventListener('click', function () {
   sideMenu.classList.remove('show-side-menu')
 })
+window.addEventListener('resize', () => {
+  if (window.matchMedia('(min-width: 600px)').matches) {
+    sideMenu.classList.remove('show-side-menu')
+  }
+})
