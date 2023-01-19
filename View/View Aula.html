@@ -10,6 +10,8 @@
     ></script>
     <link rel="stylesheet" href="../Css/home/nav_bar.css" />
     <link rel="stylesheet" href="../Css/view-aula.css" />
+    <link rel="stylesheet" href="../Css/modal.css" />
+    <script src="../JS/modal.js" defer></script>
     <title>View Aula</title>
   </head>
   <body>
@@ -37,7 +39,7 @@
           <li><a href="">Css</a></li>
           <li><a href="">Sobre</a></li>
           <li class="login-mobile">
-            <a href="register-form.html">
+            <a href="#">
               <img src="/img/user 1.svg" alt="Delineado de uma pessoa" />
               Login
             </a>
@@ -56,9 +58,20 @@
         </ul>
 
         <div class="login-btn">
-          <a href="register-form.html">
+          <a id="modal-button">
             <img src="/img/user 1.svg" alt="Delineado de uma pessoa" />
           </a>
+        </div>
+        <!-- The modal button that triggers the modal -->
+
+        <!-- The modal itself -->
+        <div id="modal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Modal content goes here</p>
+            <p>lorem*8</p>
+          </div>
         </div>
       </nav>
     </header>
