@@ -1,5 +1,5 @@
-$white:rgba(234, 245, 255, 1);
-$light-blue: rgba(20, 178, 184, 1);
+
+@import './variable.scss';
 
 :root{
   font-size: 62.5%;
@@ -10,8 +10,8 @@ $light-blue: rgba(20, 178, 184, 1);
 }
 
 body{
-  background-image: url(../img/CTA\ Background.png);
   font-family: 'Inter', sans-serif;
+  background-image: radial-gradient( circle 610px at 5.2% 51.6%,  $vivid-blue 0%, $bg-dark-blue 97.5% );
   font-style: normal;
   color: $white;
   width: 100%;
@@ -105,7 +105,6 @@ main{
 }
 @media (min-width: 1024px){
   body{
-    background-repeat: no-repeat;
     background-size: cover;
   }
   main{

@@ -1,4 +1,4 @@
-@import './variable.scss';
+@import '../old/variable.scss';
 
 :root {
    font-size: 62.5%;
@@ -43,7 +43,8 @@ a:visited{
 
   .video-wrap{
     padding-top: 1rem;
-    width: min(108rem, 100%);
+    // width: min(108rem, 100%);
+    width: min(100%, 100%);
     height: 30vh;
     margin: auto;
   }
