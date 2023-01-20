@@ -169,6 +169,9 @@ a:visited {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+  main .video-playlist {
+    height: 90%;
+  }
   main .video-playlist .title {
     padding: 0.5rem;
     font-size: 1.8rem;
@@ -177,7 +180,7 @@ a:visited {
     height: 100%;
     position: relative;
     top: 0;
-    background-color: #363949;
+    background-color: rgb(13, 8, 72);
   }
   main .content .video-wrap {
     padding: 0;

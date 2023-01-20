@@ -187,7 +187,9 @@ a:visited{
   main{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    
     .video-playlist{
+      height: 90%;
       .title{
         padding: .5rem;
         font-size: 1.8rem;
@@ -197,7 +199,7 @@ a:visited{
       height: 100%;
       position: relative;
       top: 0;
-      background-color: $dark;
+      background-color: $dark-blue;
       .video-wrap{
         padding: 0;
         height: 50.2rem;
