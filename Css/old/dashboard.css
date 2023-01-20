@@ -67,13 +67,6 @@ small {
   font-size: 0.75rem;
 }
 
-.profile-photo {
-  width: 2.8rem;
-  height: 2.8rem;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
 .text-muted {
   color: #e3e3e3;
 }
@@ -105,12 +98,14 @@ b {
 .container {
   display: grid;
   width: 96%;
-  margin: 0 auto;
   gap: 1.8rem;
   grid-template-columns: 22.4rem auto;
 }
 .container .criar-curso {
-  background-color: #181a1e;
+  background-color: #363949;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
 }
 .container .criar-curso p {
   color: rgb(234, 245, 255);

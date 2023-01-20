@@ -66,12 +66,7 @@ small{
   font-size: .75rem;
 }
 
-.profile-photo{
-  width: 2.8rem;
-  height:2.8rem;
-  border-radius: 50%;
-  overflow: hidden;
-}
+
 
 .text-muted{
   color: $info-dark;
@@ -99,12 +94,15 @@ b{
 .container{
   display: grid;
   width: 96%;
-  margin: 0 auto;
   gap: 1.8rem;
   grid-template-columns: 22.4rem auto;
 
   .criar-curso{
-    background-color: $background;
+    background-color: $dark;
+    
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 2rem ;
     p{
       color: $white;
     }
