@@ -117,6 +117,7 @@ b {
   height: 100vh;
   overflow-y: scroll;
   padding-bottom: 2rem;
+  margin-left: 5%;
 }
 .container .container-adm h1 {
   font-size: 3rem;

@@ -74,19 +74,44 @@
           </div>
 
           <div class="curso-shower">
-            <img src="#" alt="" />
-            <p>Nome curso</p>
-            <p>Subtitulo do Curos</p>
-            <div class="edit-btn">
-              <span class="material-symbols-sharp"> edit </span>
+            <img src="/img/logo-devgate.png" alt="" />
+            <div class="txt-wrap">
+              <p class="titulo-curso">
+                Nome curso Lorem ipsum dolor sit amet c
+              </p>
+              <p class="subtitulo-curso">
+                a dolore culpa labore ut. mo lorem*12 Curos
+              </p>
+              <div class="btns-aula">
+                <span class="material-symbols-sharp"> edit_document </span>
+
+                <p class="btn-criar-aula btn-aula-p">Criar Aula</p>
+              </div>
             </div>
-            <div class="btn-criar-aula">
-              <p>Criar Aula</p>
+            <div class="btn-criar-aula"></div>
+          </div>
+
+          <!-- MODAL DE CRIAÇÂO DE AULA -->
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h2>Create Aula</h2>
+              <form>
+                <input type="text" placeholder="Aula Name" />
+                <textarea placeholder="Aula Description"></textarea>
+                <button type="submit">Create</button>
+              </form>
             </div>
           </div>
 
           <div class="aulas-wrapper">
-            <div class="aula"></div>
+            <div class="aula">
+              <p class="titulo-curso">
+                01 Titulo Aulaadssadsadsa d dasdasd asd
+              </p>
+              <p class="subtitulo-curso">Desc Aula</p>
+              <p class="num-atv">Numero de Atividades:</p>
+            </div>
           </div>
         </div>
       </div>
@@ -94,5 +119,6 @@
 
     <footer></footer>
     <script src="/JS/dashboard.js" defer></script>
+    <script src="/JS/modal-aula.js" defer></script>
   </body>
 </html>
