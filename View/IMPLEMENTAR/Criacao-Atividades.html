@@ -176,7 +176,7 @@
                               <i></i>
                             </label>
 
-                        <?php
+                            <?php
                             $url = "";
                             if (isset($valueForm['url'])) {
                                 $url = $valueForm['url'];
@@ -184,18 +184,17 @@
                             ?>
 
                             <!-- FILE INPUT -->
-                            <!-- <label for="file-input">
+                             <label for="file-input" id="input-1" style="display: none;">
                               <p class='descricao'>Material de apoio: .pdf, .txt </p>
                               <br>
                               <div id="file-drop-area">
                                   <h2>Drag and drop ou clique para selecionar</h2>
                                   <input type="file" name="imagem" id="file-input" required="required" multiple>
-              
                               </div>
-                            </label> -->
+                            </label> 
 
-                            <!-- URL -->
-                            <!-- <div class="inputBox" >
+                            <!-- Vídeo -->
+                            <div class="inputBox"  id="input-2"  style="display: none;">
                               <p class="descricao">Url para se obter a url do video do Youtube, vá ao video escolhi, depois clique em compartilhar, logo em seguida em incorporar, e por fim em "copiar" no canto inferior esquerdo </p>
                               <input
                               type="text"
@@ -205,13 +204,12 @@
                               value="<?php echo $url ?>"
                               required="required"
                               /> 
-                                                            
                               <i></i>
-                            </div> -->
+                            </div> 
 
-                            <!-- Proposta de projeto -->
-                            <!-- <div class="inputBox" >
-                              <p class="descricao">Proposta de Projeto  </p>
+                            <!-- Material de apoio / texto -->
+                            <div class="inputBox" id="input-3"  style="display: none;">
+                              <p class="descricao">Proposta de Projeto serve para os alunos aplicarem os conhecimentos adquiridos durante o curso  </p>
                               <input
                               type="text"
                               id="url"
@@ -220,9 +218,8 @@
                               value="<?php echo $url ?>"
                               required="required"
                               /> 
-                                                            
                               <i></i>
-                            </div> -->
+                            </div> 
                       
 
                         <?php
