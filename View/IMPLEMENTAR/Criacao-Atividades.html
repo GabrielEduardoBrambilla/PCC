@@ -10,7 +10,8 @@
     />
     <link rel="stylesheet" href="/Css/old/dashboard.css" />
     <link rel="stylesheet" href="/Css/IMPLEMENTAR/criar-aula.css" />
-
+    <link rel="stylesheet" href="/Css/IMPLEMENTAR/criar-atividade.css" />
+    <script src="/JS/formAtividade.js" defer></script>
     <title>DashBoard</title>
   </head>
   <body>
@@ -91,56 +92,167 @@
           </div>
 
           <!-- MODAL DE CRIAÇÂO DE AULA -->
-          <div id="modal" class="modal">
+          <div id="modal" class="modal" style="display: block">
             <div class="modal-content">
               <div class="modal-body">
                 <span class="close-btn">&times;</span>
-                <h2 class="titulo-form">Aula</h2>
-                <form>
-                  <div class="inputBox" for="name">
-                    <p class="txt-title">Nome da Aula</p>
+                <h2 class="titulo-form">Atividade</h2>
+                <div class="cadastro-curso">
+                  
+                    <div class="gn-form">
+                      <form
+                        action=""
+                        method="POST"
+                        enctype="multipart/form-data"
+                      >
+                        <?php
+                            $nomeAtividade = "";
+                            if (isset($valueForm['nomeAtividade'])) {
+                                $nomeAtividade = $valueForm['nomeAtividade'];
+                            }
+                            ?>
+                            <div class="inputBox" >
+                              <p class="txt-title">Nome da Atividade</p>
+          
+                              <input
+                                type="text"
+                                placeholder="Nome da atividade"
+                                name="nomeAtividade"
+                                id="name"
+                                value="<?php echo $nomeAtividade ?>"
+                                required="required"
+                              />
+                              
+                              <i></i>
+                            </div>
 
-                    <input
-                      type="text"
-                      placeholder=""
-                      name="nomeAula"
-                      id="name"
-                      value="<?= $nomeAula ?>"
-                      required="required"
-                    />
-                    <i></i>
-                  </div>
-                  <div class="text-editor">
-                    <p class="txt-title">Descrição</p>
-                    <p class="descricao">
-                      Descrição de como sera desenvolvida as atividades. Assim
-                      como sobre a dinamica das mesmas
-                    </p>
-                    <br />
-                    <?php
-                    $descricao = "";
-                    if (isset($valueForm['descricao'])) {
-                        $descricao = $valueForm['descricao'];
-                    }
-                    ?>
-                    <textarea
-                      placeholder="ARRUMAR O EDITOR DE TEXTO"
-                      name="descricao"
-                      id="editor"
-                      value="<?php echo $descricao ?>"
-                      required="required"
-                      maxlength="512"
-                    ></textarea>
-                    <br />
-                  </div>
+                        <?php
+                            $descricao = "";
+                            if (isset($valueForm['descricao'])) {
+                                $descricao = $valueForm['descricao'];
+                            }
+                            ?>
+                            <div class="inputBox" >
+                              <p class="txt-title">Descrição</p>
+                              <p class="descricao">Descrição sobre o conteudo</p>
+                             
+                              <input
+                                type="descricao"
+                                placeholder="Descrição"
+                                name="descricao"
+                                id="descricao"
+                                value="<?php echo $descricao ?>"
+                                required="required"
+                              />
+                              
+                              <i></i>
+                            </div>
 
-                  <button type="submit" class="submit-btn">Criar Aula</button>
-                </form>
+                        <?php
+                            $tipoAtividade = "";
+                            if (isset($valueForm['tipoAtividade'])) {
+                                $tipoAtividade = $valueForm['tipoAtividade'];
+                            }
+                            ?>
+                            
+                            <label class="select-box" for="tipoAtividade">
+                                <p class="txt-title">Tipo de Atividade</p>
+                                <p class="descricao">Selecione qual tipo de atividade deseja criar</p>
+                                
+                                <select name="tipoAtividade" id="tipoAtividade" >
+                                  <option class="firs-opt" disabled selected value>
+                                    <p> 
+                                      Selecione o tipo da atividade    
+                                    </p> 
+                                    <p>▼</p>
+                                  </option>
+                                  
+                                  <option value="videoAula">Vídeo </option>
+                                  <option value="materialApoio">
+                                    Material de apoio / texto
+                                  </option>
+                                  <option value="projeto">Proposta de projeto</option>
+                                </select>
+                              <i></i>
+                            </label>
+
+                        <?php
+                            $url = "";
+                            if (isset($valueForm['url'])) {
+                                $url = $valueForm['url'];
+                            }
+                            ?>
+
+                            <!-- FILE INPUT -->
+                            <!-- <label for="file-input">
+                              <p class='descricao'>Material de apoio: .pdf, .txt </p>
+                              <br>
+                              <div id="file-drop-area">
+                                  <h2>Drag and drop ou clique para selecionar</h2>
+                                  <input type="file" name="imagem" id="file-input" required="required" multiple>
+              
+                              </div>
+                            </label> -->
+
+                            <!-- URL -->
+                            <!-- <div class="inputBox" >
+                              <p class="descricao">Url para se obter a url do video do Youtube, vá ao video escolhi, depois clique em compartilhar, logo em seguida em incorporar, e por fim em "copiar" no canto inferior esquerdo </p>
+                              <input
+                              type="text"
+                              id=""
+                              placeholder="url"
+                              name="url"
+                              value="<?php echo $url ?>"
+                              required="required"
+                              /> 
+                                                            
+                              <i></i>
+                            </div> -->
+
+                            <!-- Proposta de projeto -->
+                            <!-- <div class="inputBox" >
+                              <p class="descricao">Proposta de Projeto  </p>
+                              <input
+                              type="text"
+                              id="url"
+                              placeholder="url"
+                              name="url"
+                              value="<?php echo $url ?>"
+                              required="required"
+                              /> 
+                                                            
+                              <i></i>
+                            </div> -->
+                      
+
+                        <?php
+                            $idAula = "";
+                            if (isset($valueForm['idAula'])) {
+                                $idAula = $valueForm['idAula'];
+                            }
+                            ?>
+                        <input
+                          type="hidden"
+                          name="idAula"
+                          value="<?php echo $idAula ?>"
+                        />
+
+                        <input
+                          class="submit-btn"
+                          type="submit"
+                          name="CadastrarAtividade"
+                          value="Cadastro Atividade"
+                        />
+                      </form>
+                   
+
+                 
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="aulas-wrapper">
+          <!-- <div class="aulas-wrapper">
             <div class="aula">
               <p class="titulo-curso">
                 01 Titulo Aulaadssadsadsa d dasdasd asd
@@ -148,7 +260,7 @@
               <p class="subtitulo-curso">Desc Aula</p>
               <p class="num-atv">Numero de Atividades:</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

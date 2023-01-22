@@ -166,7 +166,7 @@ div::-webkit-scrollbar {
 
 .descricao {
   font-size: 1.6rem;
-  color: #868686;
+  color: #a3bdcc;
 }
 
 .submit-btn {
@@ -244,4 +244,27 @@ div::-webkit-scrollbar {
   .modal-body {
     padding: 2rem;
   }
+}
+#file-drop-area {
+  width: 100%;
+  height: 10rem;
+  border: 2px dashed #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#file-drop-area.drag-over {
+  border-color: #555;
+}
+
+#file-input {
+  display: none;
+}
+
+label[for=file-input] {
+  cursor: pointer;
 }/*# sourceMappingURL=criar-aula.css.map */
