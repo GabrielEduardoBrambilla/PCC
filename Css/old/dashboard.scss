@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-@import './variable.scss';
+@import '../old/variable.scss';
 
 $card-border-radius: 1rem;
 $border-radius-1: 0.4rem;
@@ -35,43 +35,39 @@ body {
   overflow-x: hidden;
   justify-content: center;
 }
-a{
+
+a {
   color: $white;
 }
-//Barra de scroll - deixar ela invisível
-body::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-  background-color: $adm-background;
-}
-
-body::-webkit-scrollbar-thumb {
-background-color: $adm-background;
-}
-
 
 img {
   display: block;
   width: 100%;
 }
+
 h1 {
   font-weight: 800;
   font-size: 4rem;
 }
+
 h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.4rem;
 }
+
 h4 {
   font-size: .8rem;
 }
+
 h5 {
   font-size: .77rem;
 }
+
 small {
   font-size: .75rem;
 }
@@ -111,21 +107,33 @@ b {
   width: 96%;
   gap: 1.8rem;
   grid-template-columns: 22.4rem auto;
-  .container-adm{
+
+  .container-adm {
     height: 100vh;
     overflow-y: scroll;
-    padding-bottom: 2rem ;
-    margin-left: 5%;
+    padding-bottom: 2rem;
+
+    //Barra de scroll - deixar ela invisível
+    &::-webkit-scrollbar {
+      width: 0.2em;
+      background-color: $adm-background;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $adm-background;
+    }
+
     h1 {
       font-size: 3rem;
     }
 
-    
+
   }
+
   //Área da side bar
-  
+
   //Páginas da área ADMIN
-  
+
 }
 
 aside {
@@ -143,9 +151,11 @@ aside {
     justify-content: space-between;
     margin-top: 1.4rem;
     gap: 1rem;
-    h2{
+
+    h2 {
       color: $adm-fontColor;
     }
+
     //Logo com a Imagem e Nome do Site
     .logo {
       display: flex;
@@ -175,9 +185,10 @@ aside {
     top: 3rem;
     color: $adm-fontColor;
 
-    h2{
+    h2 {
       color: $adm-fontColor;
     }
+
     //Links do Menu
     a {
       display: flex;
@@ -301,22 +312,28 @@ main {
   .container {
     width: 96%;
     grid-template-columns: 6.4rem auto;
-    .container-adm{
+
+    .container-adm {
       width: 90%;
       margin-left: 10%;
     }
+
     //Área da side bar
     aside {
       width: 100%;
-     .top{
-      justify-content: center;
-     }
-      .logo{
+
+      .top {
+        justify-content: center;
+      }
+
+      .logo {
         margin: auto;
       }
+
       h2 {
         display: none;
       }
+
       h3 {
         display: none;
       }
@@ -339,7 +356,7 @@ main {
     grid-template-columns: 0 0;
     margin: auto;
 
-    .container-adm{
+    .container-adm {
       margin-left: 0%;
       margin-right: 0%;
       width: 100%;
@@ -357,20 +374,25 @@ main {
       padding-right: $card-padding;
       display: none;
       transition: all 300ms ease;
+
       h2 {
         display: block;
       }
-      .top{
+
+      .top {
         justify-content: normal;
+
         .close {
           display: flex;
           align-items: center;
         }
-       }
-      .logo{
+      }
+
+      .logo {
         margin: 0 .5rem;
       }
-      h2{
+
+      h2 {
         display: block;
       }
     }
@@ -457,10 +479,6 @@ main {
     width: 96%;
     padding: 1rem 1rem 1rem 1.5rem;
 
-    p {
-      color: $white;
-
-    }
   }
 
   main {
@@ -524,7 +542,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   margin: 20px 0;
-  
+
   .card {
     display: flex;
     flex-direction: column;
@@ -536,39 +554,39 @@ main {
     border-radius: 5px;
     box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
   }
-  
+
   .card:first-child {
     border-left: 7px solid $light-blue;
   }
-  
+
   .card:nth-child(2) {
     border-left: 7px solid #0d00ff;
   }
-  
+
   .card:nth-child(3) {
     border-left: 7px solid #006d86;
   }
-  
+
   .card:nth-child(4) {
     border-left: 7px solid #840007;
   }
-  
-  .card > span {
+
+  .card>span {
     font-size: 20px;
     font-weight: 600;
   }
-  
+
   .card-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
-  .card-inner > p {
+
+  .card-inner>p {
     font-size: 18px;
   }
-  
-  .card-inner > span {
+
+  .card-inner>span {
     font-size: 35px;
   }
 }

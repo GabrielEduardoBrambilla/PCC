@@ -62,7 +62,7 @@ main .login-form form .btn {
   width: 108%;
   -o-object-fit: fill;
      object-fit: fill;
-  background: rgb(20, 178, 184);
+  background: rgb(19, 131, 200);
   border: 0;
   border-radius: 8px;
   margin-top: 1.5rem;
@@ -102,7 +102,7 @@ main .login-form form a {
   margin-left: 3px;
 }
 main .login-form form a:hover {
-  color: rgb(20, 178, 184);
+  color: rgb(19, 131, 200);
 }
 
 @media (min-width: 1024px) {
@@ -141,7 +141,7 @@ main .login-form form a:hover {
     width: 100%;
     -o-object-fit: fill;
        object-fit: fill;
-    background: rgb(20, 178, 184);
+    background: rgb(19, 131, 200);
     margin-top: 3.2rem;
   }
   main .login-form form input {

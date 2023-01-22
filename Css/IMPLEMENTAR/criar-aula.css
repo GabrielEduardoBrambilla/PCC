@@ -9,6 +9,11 @@
   text-align: left;
 }
 
+.titulo-form {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
 div::-webkit-scrollbar {
   width: 0;
   height: 0;
@@ -104,6 +109,87 @@ div::-webkit-scrollbar {
     justify-content: space-between;
   }
 }
+.inputBox {
+  position: relative;
+  margin-bottom: 5%;
+}
+.inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #e0e0e0;
+  font-size: 1em;
+  letter-spacing: 0.05;
+  z-index: 10;
+}
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 2.2rem;
+  color: #e0e0e0;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #e0e0e0;
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0.75em;
+}
+.inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #1F2A40;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
+  height: 44px;
+}
+
+.txt-title {
+  font-size: 2.2rem;
+  color: #e0e0e0;
+  margin-bottom: 1%;
+}
+
+.descricao {
+  font-size: 1.6rem;
+  color: #868686;
+}
+
+.submit-btn {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  color: #e0e0e0;
+  border-radius: 0.9rem;
+  padding: 2rem;
+  width: 100%;
+  background-color: #111e88;
+}
+
+.submit-btn:hover {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  color: #e0e0e0;
+  border-radius: 0.9rem;
+  padding: 2rem;
+  width: 100%;
+  background-color: #0033ff;
+  cursor: pointer;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -118,14 +204,29 @@ div::-webkit-scrollbar {
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 82rem;
+  height: 80%;
+  overflow-y: auto; /* Add a scrollbar for the y-axis */
+  background: #141b2d;
 }
 
-.close-btn {
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 5rem;
+  max-height: 100%; /* Set the maximum height for the modal body */
+  overflow-y: auto; /* Add a scrollbar for the y-axis */
+}
+.modal-body .close-btn {
+  position: absolute;
+  top: 0.7rem;
+  right: 2rem;
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -134,7 +235,13 @@ div::-webkit-scrollbar {
 
 .close-btn:hover,
 .close-btn:focus {
-  color: black;
+  color: rgb(234, 245, 255);
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .modal-body {
+    padding: 2rem;
+  }
 }/*# sourceMappingURL=criar-aula.css.map */
