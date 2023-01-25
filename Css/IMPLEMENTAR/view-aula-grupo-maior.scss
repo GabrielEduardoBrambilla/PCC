@@ -17,7 +17,7 @@
 body{
   font-family:Poppins, sans-serif;
 }
-main{
+.main-view-aula{
   background-color: $dark-blue;
   height: 100%;
   margin: auto;
@@ -217,7 +217,7 @@ a:visited{
 }
   
 @media (min-width: 768px) {
-  main{
+  .main-view-aula{
     display: grid;
     grid-template-columns: 66% 33%;
     width: 100%;
