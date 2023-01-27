@@ -22,9 +22,11 @@
   width: 25rem;
   height: 25rem;
 }
-.container .dev img:hover {
+
+/* Arrumar hover para cada um  */
+/* .container .dev img:hover {
   content: url(../home/brambillajpeg.jpeg);
-}
+} */
 .container .dev h2 {
   margin-top: 1rem;
 }
