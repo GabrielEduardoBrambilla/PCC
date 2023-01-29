@@ -1,15 +1,108 @@
 @import '../old/variable.scss';
 
 .container{
-  margin: 5rem auto;
-  width: 96%;
-  height: 80%;
+  padding: 5rem ;
+  width: 100%;
+  height: max-content;
   background-color: $dark-blue;
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  text-align: center;
+  text-align: left;
+
+  .introducao{
+    margin-bottom: 3%;
+    .titulo-intro{
+      font-size: 3rem;
+      margin-bottom: 1%;
+    }
+    .text{
+      font-size: 1.8rem;
+      max-width: 102rem;
+      margin-bottom: .5%;
+    }
+  }
+
+  .objetivos{
+    font-size: 1.8rem;
+    p{
+      margin-bottom: 2rem;
+    }
+    .obj-titulo{
+      font-size: 2.5rem;
+      margin-bottom: .8%;
+    }
+    .objs-especificos{
+      ul{
+        text-decoration: dotted;
+        list-style: circle;
+        margin-left: 3.5% ;
+        li{
+        list-style: disc;
+        margin-bottom: .8%;
+        max-width: 51rem;
+        }
+      }
+    }
+  }
+
+  .tec-tools{
+    margin: 3% 0 1.5% ;
+    
+    .tec-titulo{
+      font-size: 2.5rem;
+    }
+    .tec-imgs-wrap{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .tec-img{
+        margin: 2rem;
+        width: 8rem;
+        height: 8rem;
+        object-fit: contain;
+        background-color: $background;
+        border-radius: .5rem;
+        transition: all 500ms ease;
+        &:hover{
+          width: 10rem;
+          height: 10rem;
+          margin: 0 ;
+          cursor: pointer;
+          background:$info-light;
+          border-radius: 1.8rem;
+        }
+        &:visited{
+          margin: 2rem;
+        width: 8rem;
+        height: 8rem;
+        object-fit: contain;
+        background-color: $background;
+        border-radius: .5rem;
+        transition: all 500ms ease;
+        }
+      }
+      .spec{
+        padding: .8rem;
+      }
+    }
+  }
+  .spacer-fix{
+    margin: 0 0 3% 0;
+  }
+  .dev-titulo{
+    font-size: 2.5rem;
+  }
+  .desenvolvedores{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+  }
   .dev{
     font-family: Poppins, sans-serif;
     font-size: 1.2rem;
@@ -25,9 +118,7 @@
     h2{
       margin-top: 1rem;
     }
-    p{
-
-    }
+   
     .git{
       img{
         transform: translateY(25%);
@@ -40,6 +131,8 @@
     }
   }
 }
+
+
 @media (max-width: 768px) {
   .container{
     flex-direction: column;

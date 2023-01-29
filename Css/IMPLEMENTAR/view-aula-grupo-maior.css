@@ -15,7 +15,7 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-main {
+.main-view-aula {
   background-color: rgb(13, 8, 72);
   height: 100%;
   margin: auto;
@@ -177,40 +177,40 @@ a:visited {
   }
 }
 @media (min-width: 768px) {
-  main {
+  .main-view-aula {
     display: grid;
     grid-template-columns: 66% 33%;
     width: 100%;
     max-width: 1800px;
   }
-  main .video-playlist {
+  .main-view-aula .video-playlist {
     height: 90%;
   }
-  main .video-playlist .title {
+  .main-view-aula .video-playlist .title {
     padding: 1.5rem;
     font-size: 1.8rem;
   }
-  main .content {
+  .main-view-aula .content {
     height: 100%;
     position: relative;
     top: 0;
     background-color: rgb(13, 8, 72);
   }
-  main .content .video-wrap {
+  .main-view-aula .content .video-wrap {
     padding: 0;
     padding-left: 4%;
     height: 50.2rem;
   }
-  main .content .text-content {
+  .main-view-aula .content .text-content {
     align-items: left;
     margin: auto 2rem;
     text-align: left;
   }
-  main .class-list {
+  .main-view-aula .class-list {
     height: 100%;
     margin: 0;
   }
-  main .class-list .videos {
+  .main-view-aula .class-list .videos {
     height: 100%;
   }
 }

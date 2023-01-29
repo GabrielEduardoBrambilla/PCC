@@ -1,14 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
 .container {
-  margin: 5rem auto;
-  width: 96%;
-  height: 80%;
+  padding: 5rem;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   background-color: rgb(13, 8, 72);
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  text-align: left;
+}
+.container .introducao {
+  margin-bottom: 3%;
+}
+.container .introducao .titulo-intro {
+  font-size: 3rem;
+  margin-bottom: 1%;
+}
+.container .introducao .text {
+  font-size: 1.8rem;
+  max-width: 102rem;
+  margin-bottom: 0.5%;
+}
+.container .objetivos {
+  font-size: 1.8rem;
+}
+.container .objetivos p {
+  margin-bottom: 2rem;
+}
+.container .objetivos .obj-titulo {
+  font-size: 2.5rem;
+  margin-bottom: 0.8%;
+}
+.container .objetivos .objs-especificos ul {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+  list-style: circle;
+  margin-left: 3.5%;
+}
+.container .objetivos .objs-especificos ul li {
+  list-style: disc;
+  margin-bottom: 0.8%;
+  max-width: 51rem;
+}
+.container .tec-tools {
+  margin: 3% 0 1.5%;
+}
+.container .tec-tools .tec-titulo {
+  font-size: 2.5rem;
+}
+.container .tec-tools .tec-imgs-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .tec-tools .tec-imgs-wrap .tec-img {
+  margin: 2rem;
+  width: 8rem;
+  height: 8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #181a1e;
+  border-radius: 0.5rem;
+  transition: all 500ms ease;
+}
+.container .tec-tools .tec-imgs-wrap .tec-img:hover {
+  width: 10rem;
+  height: 10rem;
+  margin: 0;
+  cursor: pointer;
+  background: #dce1eb;
+  border-radius: 1.8rem;
+}
+.container .tec-tools .tec-imgs-wrap .tec-img:visited {
+  margin: 2rem;
+  width: 8rem;
+  height: 8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #181a1e;
+  border-radius: 0.5rem;
+  transition: all 500ms ease;
+}
+.container .tec-tools .tec-imgs-wrap .spec {
+  padding: 0.8rem;
+}
+.container .spacer-fix {
+  margin: 0 0 3% 0;
+}
+.container .dev-titulo {
+  font-size: 2.5rem;
+}
+.container .desenvolvedores {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
   text-align: center;
 }
 .container .dev {
@@ -22,11 +111,9 @@
   width: 25rem;
   height: 25rem;
 }
-
-/* Arrumar hover para cada um  */
-/* .container .dev img:hover {
+.container .dev img:hover {
   content: url(../home/brambillajpeg.jpeg);
-} */
+}
 .container .dev h2 {
   margin-top: 1rem;
 }
