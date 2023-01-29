@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-around;
   text-align: left;
+  padding-bottom: 3rem;
 
   .introducao{
     margin-bottom: 3%;
@@ -57,9 +58,8 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-
       .tec-img{
-        margin: 2rem;
+        margin: 1.8rem;
         width: 8rem;
         height: 8rem;
         object-fit: contain;
@@ -67,8 +67,8 @@
         border-radius: .5rem;
         transition: all 500ms ease;
         &:hover{
-          width: 10rem;
-          height: 10rem;
+          width: 11rem;
+          height: 11rem;
           margin: 0 ;
           cursor: pointer;
           background:$info-light;
@@ -94,40 +94,56 @@
   }
   .dev-titulo{
     font-size: 2.5rem;
+    margin-bottom: 1.8%;
+
   }
   .desenvolvedores{
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
     text-align: center;
-  }
-  .dev{
-    font-family: Poppins, sans-serif;
-    font-size: 1.2rem;
-    img{
-      border-radius: .9rem;
-      object-fit: cover;
-      width: 25rem;
-      height: 25rem;
-    }
-    img:hover{
-      content: url(../home/brambillajpeg.jpeg);
-    }
-    h2{
-      margin-top: 1rem;
-    }
-   
-    .git{
+    gap: 2rem;
+    .dev{
+      font-family: Poppins, sans-serif;
+      font-size: 1.2rem;
       img{
-        transform: translateY(25%);
-        width: 2rem;
-        height: 2rem;
+        border-radius: .9rem;
+        object-fit: cover;
+        width: 25rem;
+        height: 25rem;
+        transition: all 400ms ease;
       }
-    }
-    .git:hover{
-      color: $font;
+    
+      .dev-1:hover{
+        content: url(/img/daniel.jpeg);
+        transition: all 400ms ease;
+  
+      }
+      .dev-2:hover{
+        content: url(/img/felipe.jpeg);
+        transition: all 400ms ease;
+        
+      }
+      .dev-3:hover{
+        content: url(/img/brambilla.png);
+        
+      }
+      h2{
+        margin-top: 1rem;
+      }
+     
+      .git{
+        img{
+          transform: translateY(25%);
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+      a:hover{
+        color: $font;
+      }
     }
   }
 }
@@ -136,7 +152,6 @@
 @media (max-width: 768px) {
   .container{
     flex-direction: column;
-    height: 120%;
 
     .dev{
 
@@ -148,4 +163,20 @@
       }
     }
   }
+}
+
+@media (max-width: 330px) {
+  .container{
+    padding: 2rem;
+    .tec-tools{
+      .tec-imgs-wrap{
+        .tec-img{
+          margin: 1rem;
+        }
+  
+      }
+    }
+
+  }
+
 }
